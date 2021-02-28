@@ -34,7 +34,7 @@ pageClass: routes
 
 ### BBC 英文
 
-<Route author="HenryQW" example="/bbc/world-asia" path="/bbc/:channel" :paramsDesc="['频道，缺省为热门']">
+<Route author="HenryQW DIYgod" example="/bbc/world-asia" path="/bbc/:channel" :paramsDesc="['频道，缺省为热门']">
 
 通过提取文章全文，以提供比官方源更佳的阅读体验。
 
@@ -222,7 +222,7 @@ Solidot 提供的 feed:
 
 ### News
 
-<Route author="nczitzk" example="/telecompaper/news/mobile/2020/China/News" path="/telecompaper/news/:caty/:year?/:country?/:type?/:keyword?" :paramsDesc="['分类，见下表', '年份，可在所选分类页中 Filter 的 `Years` 选择器中选择相应年份，不限年份则填入 `all`，默认为不限', '国家或大洲，可在所选分类页中 Filter 的 `Countries` 选择器中选择相应国家或大洲，不限国家或大洲则填入 `all`，默认为不限', '类型，可在所选分类页中 Filter 的 `Types` 选择器中选择相应类型，不限类型则填入 `all`，默认为不限', '搜索关键字']">
+<Route author="nczitzk" example="/telecompaper/news/mobile/2020/China/News" path="/telecompaper/news/:caty/:year?/:country?/:type?" :paramsDesc="['分类，见下表', '年份，可在所选分类页中 Filter 的 `Years` 选择器中选择相应年份，不限年份则填入 `all`，默认为不限', '国家或大洲，可在所选分类页中 Filter 的 `Countries` 选择器中选择相应国家或大洲，不限国家或大洲则填入 `all`，默认为不限', '类型，可在所选分类页中 Filter 的 `Types` 选择器中选择相应类型，不限类型则填入 `all`，默认为不限']">
 
 可选分类如下
 
@@ -237,6 +237,24 @@ Solidot 提供的 feed:
 [INDUSTRY RESOURCES](https://www.telecompaper.com/industry-resources) 分类页的 Filter 仅提供了 `Content Type` 选择器，对应路由中 `type` 参数。`year` 和 `country` 参数则对该分类无效。
 
 :::
+
+</Route>
+
+### Search
+
+<Route author="nczitzk" example="/telecompaper/search/Nokia" path="/telecompaper/search/:keyword?/:company?/:sort?/:period?" :paramsDesc="['关键词', '公司名，默认为不限', '排序，见下表，默认为 Date Descending', '发表在时间段内，默认为 12 months']">
+
+排序
+
+| Date Ascending | Date Descending |
+| -------------- | --------------- |
+| 1              | 2               |
+
+发表在时间段内
+
+| 1 month | 3 months | 6 months | 12 months | 24 months |
+| ------- | -------- | -------- | --------- | --------- |
+| 1       | 3        | 6        | 12        | 24        |
 
 </Route>
 
@@ -595,12 +613,6 @@ category 对应的关键词有
 
 </Route>
 
-## 每经网
-
-### 重磅原创
-
-<Route author="MeXunco" example="/nbd/daily" path="/nbd/daily" />
-
 ## 南方周末
 
 ### 新闻分类
@@ -739,7 +751,7 @@ category 对应的关键词有
 
 ### 分类
 
-<Route author="nczitzk" example="/cna/aall" path="/cna/:id?" :paramsDesc="['分类 id，见下表，默认为 aall']">
+<Route author="nczitzk" example="/cna/aall" path="/cna/:id?" :paramsDesc="['分类 id 或新闻专题 id。分类 id 见下表，新闻专题 id 為 https://www.cna.com.tw/list/newstopic.aspx 中，連結的數字部份。此參數默认为 aall']">
 
 | 即時 | 政治 | 國際 | 兩岸 | 產經 | 證券 | 科技 | 生活 | 社會 | 地方 | 文化 | 運動 | 娛樂 |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
@@ -802,6 +814,12 @@ category 对应的关键词有
 | 本地新聞 | 大中華新聞   | 國際新聞      | 財經新聞 | 體育新聞 |
 
 </Route>
+
+## 香港商报
+
+### PDF 版
+
+<Route author="nczitzk" example="/hkcd/pdf" path="/hkcd/pdf"/>
 
 ## 新京报
 
@@ -884,6 +902,10 @@ category 对应的关键词有
 ### 新闻联播文字版全文
 
 <Route author="xfangbao" example="/xwlb" path="/xwlb/index" />
+
+### 央视网图片《镜象》
+
+<Route author="nczitzk" example="/cctv/photo/jx" path="/cctv/photo/jx" />
 
 ## 朝日新聞中文網（繁體中文版）
 
