@@ -168,11 +168,23 @@ Language
 
 <RouteEn author="imlonghao" path="/greasyfork/:language/:domain?" example="/greasyfork/en/google.com" :paramsDesc="['language, located on the top right corner of Greasy Fork\'s search page, set to `all` for including all languages', 'the script\'s target domain']" />
 
+## Hugo
+
+### Release News
+
+<Route author="maokwen" example="/hugo/releases" path="/hugo/releases"/>
+
 ## IPSW.me
 
 ### Apple Firmware Update-IPSWs/OTAs version
 
 <RouteEn author="Jeason0228" example="/ipsw/index/ipsws/iPhone11,8" path="/ipsw/index/:ptype/:pname/" :paramsDesc="['Fill in ipsws or otas to get different versions of firmware','Product name, `http://rsshub.app/ipsw/index/ipsws/iPod`, if you fill in the iPad, follow the entire iPad series(ptype default to ipsws).`http://rsshub.app/ipsw/index/ipsws/iPhone11,8`, if you fill in the specific iPhone11,8, submit to the ipsws firmware information of this model']"/>
+
+## Logseq
+
+### Changelog
+
+<RouteEn author="nczitzk" example="/logseq/changelog" path="/logseq/changelog"/>
 
 ## MacKed
 
