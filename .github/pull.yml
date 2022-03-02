@@ -1,4 +1,9 @@
+
 version: "1"
+on: 
+  push:
+    branches:
+      - master
 rules:
   - base: master
     upstream: DIYgod:master
