@@ -592,6 +592,30 @@
     "/hbr/topic/:topic?/:type?": [
         "nczitzk"
     ],
+    "/hdu/cs": [
+        "legr4ndk"
+    ],
+    "/hellobtc/information/:channel?": [
+        "Fatpandac"
+    ],
+    "/hellobtc/news": [
+        "Fatpandac"
+    ],
+    "/hellobtc/kepu/:channel?": [
+        "Fatpandac"
+    ],
+    "/hellobtc/topic/:id": [
+        "Fatpandac"
+    ],
+    "/hellogithub/article": [
+        "moke8"
+    ],
+    "/hellogithub/ranking/:type?": [
+        "moke8"
+    ],
+    "/hellogithub/month": [
+        "moke8"
+    ],
     "/heu/yjsy/list/:id": [
         "Derekmini"
     ],
@@ -1282,11 +1306,23 @@
     "/tisi/latest": [
         "Fatpandac"
     ],
+    "/tokeninsight/blog/:lang?": [
+        "fuergaosi233"
+    ],
+    "/tokeninsight/bulletin:lang?": [
+        "fuergaosi233"
+    ],
+    "/tokeninsight/report:lang?": [
+        "fuergaosi233"
+    ],
     "/topys/:keyword?": [
         "nczitzk"
     ],
     "/trow/portal": [
         "shiningdracon"
+    ],
+    "/txrjy/fornumtopic/:channel?": [
+        "Fatpandac"
     ],
     "/ucas/job/:type?": [
         "Fatpandac"
