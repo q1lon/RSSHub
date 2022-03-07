@@ -1,0 +1,21 @@
+name: 'auto merge upstream'
+
+on:
+  push:
+  schedule:
+    - cron: '0 22 * * *'
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout codes'
+        uses: actions/checkout@v2
+      - name: merge upstream
+        run: |
+            git remote add upstream https://github.com/DIYgod/RSSHub.git
+            git remote -v
+            git fetch upstream
+            git checkout master
+            git merge upstream/master
+            git push origin master
