@@ -224,6 +224,9 @@
     "/bnu/bs/:category?": [
         "nczitzk"
     ],
+    "/bookfere/:category": [
+        "OdinZhang"
+    ],
     "/brooklynmuseum/exhibitions": [
         "chazeon"
     ],
@@ -436,6 +439,36 @@
     ],
     "/dushu/fuzhou": [
         "Fatpandac"
+    ],
+    "/dut/news/:category?": [
+        "nczitzk"
+    ],
+    "/dut/perdep/:category?": [
+        "nczitzk"
+    ],
+    "/dut/teach/:category?": [
+        "beautyyuyanli",
+        "nczitzk"
+    ],
+    "/dut/gs/:category?": [
+        "nczitzk"
+    ],
+    "/dut/ssdut/:category?": [
+        "nczitzk"
+    ],
+    "/dut/eda/:category?": [
+        "nczitzk"
+    ],
+    "/dut/pjteach/:category?": [
+        "nczitzk"
+    ],
+    "/dut/dutdice/:category?": [
+        "beautyyuyanli",
+        "nczitzk"
+    ],
+    "/dut/tycgzx/:category?": [
+        "beatyyuyanli",
+        "nczitzk"
     ],
     "/e-hentai/category/:category?/:needTorrents?/:needImages?": [
         "nczitzk"
@@ -2213,7 +2246,6 @@
     "/bjtu/gs/:type": [],
     "/dpu/jiaowu/news/:type?": [],
     "/dpu/wlfw/news/:type?": [],
-    "/dut/:subsite/:type": [],
     "/seu/radio/academic": [],
     "/seu/yzb/:type": [],
     "/seu/cse/:type?": [],
