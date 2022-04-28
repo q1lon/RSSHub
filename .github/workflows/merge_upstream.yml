@@ -20,8 +20,8 @@ jobs:
             git fetch upstream
             git checkout master
             git merge upstream/master --allow-unrelated-histories
-            git -c credential.helper= -c core.quotepath=false -c log.showSignature=false checkout --theirs -- yarn.lock
-            git -c credential.helper= -c core.quotepath=false -c log.showSignature=false add --ignore-errors -A -f -- yarn.lock
+            git -c credential.helper= -c core.quotepath=false -c log.showSignature=false checkout --theirs -- .
+            git -c credential.helper= -c core.quotepath=false -c log.showSignature=false add --ignore-errors -A -f -- .
             git add .
             git commit -m 'upstream'
             git push origin master --force
