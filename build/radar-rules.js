@@ -486,6 +486,27 @@
         docs:"https://docs.rsshub.app/program-update.html#app-store-mac-app-store",
         source:[ "/" ],
         target:"/appstore/gofans" } ] },
+  "arknights.jp":{ _name:"明日方舟",
+    ak:[ { title:"アークナイツ（日服新闻）",
+        docs:"https://docs.rsshub.app/game.html#ming-ri-fang-zhou",
+        source:[ "/news?lang=ja&limit=9&page=1",
+          "/" ],
+        target:"/arknights/japan" } ] },
+  "hypergryph.com":{ _name:"明日方舟",
+    ak:[ { title:"游戏公告与新闻",
+        docs:"https://docs.rsshub.app/game.html#ming-ri-fang-zhou",
+        source:[ "/news.html",
+          "/" ],
+        target:"/arknights/news" } ],
+    "ak-conf":[ { title:"游戏内公告",
+        docs:"https://docs.rsshub.app/game.html#ming-ri-fang-zhou",
+        source:[ "/*" ],
+        target:"/arknights/news" } ],
+    "monster-siren":[ { title:"塞壬唱片",
+        docs:"https://docs.rsshub.app/game.html#ming-ri-fang-zhou",
+        source:[ "/info",
+          "/" ],
+        target:"/siren/news" } ] },
   "blog.leanstack.com":{ _name:"Ash Maurya's blog",
     ".":[ { title:"Ash Maurya's blog",
         docs:"https://docs.rsshub.app/en/blog.html#ash-maurya",
@@ -859,6 +880,11 @@
         docs:"https://docs.rsshub.app/finance.html#shou-xi-jing-ji-xue-jia-lun-tan-jin-rong-re-dian",
         source:[ "/index.php/index/index" ],
         target:"/chinacef/portal/hot" } ] },
+  "chinafactcheck.com":{ _name:"有据",
+    ".":[ { title:"最新文章列表",
+        docs:"https://docs.rsshub.app/other.html#you-ju-zui-xin-wen-zhang-lie-biao",
+        source:[ "/" ],
+        target:"/chinafactcheck" } ] },
   "chinanews.com.cn":{ _name:"中国新闻网",
     ".":[ { title:"最新",
         docs:"https://docs.rsshub.app/traditional-media.html#zhong-xin-wang",
@@ -914,6 +940,17 @@
         docs:"https://docs.rsshub.app/picture.html#cool-18",
         source:"/",
         target:"/cool18/:id?/:type?/:keyword?" } ] },
+  "coomer.party":{ _name:"Coomer",
+    ".":[ { title:"Artist",
+        docs:"https://docs.rsshub.app/multimedia.html#coomer-artist",
+        source:[ "/onlyfans/user/:id",
+          "/" ],
+        target:"/coomer/artist/:id" },
+      { title:"Recent Posts",
+        docs:"https://docs.rsshub.app/multimedia.html#coomer-recent-posts",
+        source:[ "/posts",
+          "/" ],
+        target:"/coomer/posts" } ] },
   "ey.gov.tw":{ _name:"行政院消费者保护会",
     cpc:[ { title:"新闻稿",
         docs:"https://docs.rsshub.app/government.html#tai-wan-xing-zheng-yuan-xiao-fei-zhe-bao-hu-hui",
@@ -965,6 +1002,11 @@
         docs:"https://docs.rsshub.app/other.html#guo-jia-liu-xue-wang",
         source:"/*",
         target:"/csc/notice/lqgg" } ] },
+  "csu.edu.cn":{ _name:"中南大学",
+    cse:[ { title:"计算机学院",
+        docs:"https://docs.rsshub.app/university.html#zhong-nan-da-xue",
+        source:[ "/index/:type" ],
+        target:(params) => `/csu/cse/${params.type.substring(0, 4)}` } ] },
   "dahecube.com":{ _name:"大河财立方",
     ".":[ { title:"新闻",
         docs:"https://docs.rsshub.app/new-media.html#da-he-cai-li-fang",
@@ -1101,6 +1143,11 @@
         docs:"https://docs.rsshub.app/social-media.html#dou-ban",
         source:"/jobs/intern",
         target:"/jobs/intern" } ] },
+  "douyin.com":{ _name:"抖音",
+    ".":[ { title:"博主",
+        docs:"https://docs.rsshub.app/social-media.html#dou-yin",
+        source:"/user/:uid",
+        target:"/douyin/user/:uid" } ] },
   "dtcj.com":{ _name:"DT 财经",
     ".":[ { title:"数据侠专栏",
         docs:"https://docs.rsshub.app/finance.html#dt-cai-jing",
@@ -3060,6 +3107,11 @@
         source:[ "/:language",
           "/" ],
         target:(params, url) => `/javlibrary/userowned/${new URL(url).searchParams.get('u')}/${params.language}` } ] },
+  "jd.com":{ _name:"京东",
+    item:[ { title:"商品价格",
+        docs:"https://docs.rsshub.app/shopping.html#jing-dong-shang-pin-jia-ge",
+        source:[ "/" ],
+        target:(params, url) => `/jd/price/${new URL(url).hash.match(/\/(\d+)\.html/)[1]}` } ] },
   "thejewishmuseum.org":{ _name:"Jewish Museum",
     ".":[ { title:"Exhibitions",
         docs:"https://docs.rsshub.app/en/travel.html#the-jewish-museum" } ] },
@@ -3905,10 +3957,100 @@
         source:"/profile/:id",
         target:"/picuki/profile/:id" } ] },
   "pku.edu.cn":{ _name:"北京大学",
+    admission:[ { title:"硕士招生",
+        docs:"https://docs.rsshub.app/university.html#bei-jing-da-xue",
+        source:[ "/zsxx/sszs/index.htm",
+          "/" ],
+        target:"/pku/admission/sszs" } ],
+    bbs:[ { title:"北大未名 BBS 全站十大",
+        docs:"https://docs.rsshub.app/university.html#bei-jing-da-xue",
+        source:[ "/v2/hot-topic.php",
+          "/" ],
+        target:"/pku/bbs/hot" } ],
+    bio:[ { title:"生命科学学院近期讲座",
+        docs:"https://docs.rsshub.app/university.html#bei-jing-da-xue",
+        source:[ "/homes/Index/news_jz/7/7.html",
+          "/" ],
+        target:"/pku/cls/lecture" } ],
+    eecs:[ { title:"信科公告通知",
+        docs:"https://docs.rsshub.app/university.html#bei-jing-da-xue",
+        source:[ "/xygk1/ggtz/:type",
+          "/xygk1/ggtz.htm",
+          "/" ],
+        target:(params) => {
+                    let type = params.type;
+                    switch (type) {
+                        case 'qb.htm':
+                            type = 0;
+                            break;
+                        case 'xytz.htm':
+                            type = 1;
+                            break;
+                        case 'rstz.htm':
+                            type = 2;
+                            break;
+                        case 'jwtz.htm':
+                            type = 6;
+                            break;
+                        case 'xgtz.htm':
+                            type = 8;
+                            break;
+                        case 'kytz.htm':
+                            type = 7;
+                            break;
+                        case 'cwtz.htm':
+                            type = 5;
+                            break;
+                        case 'ghtz.htm':
+                            type = 3;
+                            break;
+                        case 'yytz.htm':
+                            type = 4;
+                            break;
+                        default:
+                            type = 0;
+                            break;
+                    }
+                    return `/pku/eecs/${type}`;
+                } } ],
     hr:[ { title:"人事处",
         docs:"https://docs.rsshub.app/university.html#bei-jing-da-xue-ren-shi-chu",
         source:[ "/" ],
-        target:"/pku/hr/:category?" } ] },
+        target:"/pku/hr/:category?" } ],
+    "www.rccp":[ { title:"每周一推 - 中国政治学研究中心",
+        docs:"https://docs.rsshub.app/university.html#bei-jing-da-xue-ren-shi-chu",
+        source:[ "/" ],
+        target:"/pku/rccp/mzyt" } ],
+    scc:[ { title:"学生就业指导服务中心",
+        docs:"https://docs.rsshub.app/university.html#bei-jing-da-xue-ren-shi-chu",
+        source:[ "/*path" ],
+        target:(params) => {
+                    let type;
+                    switch (params.path) {
+                        case 'home!newsHome.action?category=12':
+                            type = 'xwrd';
+                            break;
+                        case 'home!newsHome.action?category=13':
+                            type = 'tzgg';
+                            break;
+                        case 'home!recruit.action?category=1&jobType=110001':
+                            type = 'zpxx';
+                            break;
+                        case 'home!recruitList.action?category=1&jobType=110002':
+                            type = 'gfjgxx';
+                            break;
+                        case 'home!recruitList.action?category=2':
+                            type = 'sxxx';
+                            break;
+                        case 'home!newsHome.action?category=11':
+                            type = 'cyxx';
+                            break;
+                        default:
+                            type = 'zpxx';
+                            break;
+                    }
+                    return `/pku/scc/recruit/${type}`;
+                } } ] },
   "polkaworld.org":{ _name:"PolkaWorld",
     www:[ { title:"最新资讯",
         docs:"https://docs.rsshub.app/blog.html#polkaworld",
@@ -4509,6 +4651,15 @@
         docs:"https://docs.rsshub.app/university.html#xi-nan-shi-you-da-xue",
         source:[ "/" ],
         target:"" } ] },
+  "syosetu.com":{ _name:"syosetu",
+    ncode:[ { title:"章节更新",
+        docs:"https://docs.rsshub.app/reading.html#syosetu-zhang-jie-geng-xin",
+        source:[ "/:id" ],
+        target:"/syosetu/chapter/:id" } ],
+    novel18:[ { title:"章节更新",
+        docs:"https://docs.rsshub.app/reading.html#syosetu-zhang-jie-geng-xin",
+        source:[ "/:id" ],
+        target:"/syosetu/chapter/:id" } ] },
   "sysu.edu.cn":{ _name:"中山大学",
     cse:[ { title:"计算机学院（软件学院）",
         docs:"https://docs.rsshub.app/universities.html#zhong-shan-da-xue-ji-suan-ji-xue-yuan",
@@ -5232,6 +5383,16 @@
         docs:"https://docs.rsshub.app/game.html#you-xi-da-zhe-qing-bao-you-xi-zhe-kou",
         source:"/",
         target:"/yxdzqb/:type" } ] },
+  "yysub.net":{ _name:"人人影视",
+    ".":[ { title:"影视资讯",
+        docs:"https://docs.rsshub.app/multimedia#ren-ren-ying-shi",
+        source:"/article",
+        target:(_params, url) => `/yyets/article${new URL(url).searchParams.has('type') ? '/' + new URL(url).searchParams.get('type') : ''}` },
+      { title:"今日播出",
+        docs:"https://docs.rsshub.app/multimedia#ren-ren-ying-shi",
+        source:[ "/tv/schedule",
+          "/" ],
+        target:"/yyets/today" } ] },
   "yystv.cn":{ _name:"游研社",
     ".":[ { title:"推游",
         docs:"https://docs.rsshub.app/game.html#you-yan-she",
@@ -5450,6 +5611,12 @@
         docs:"https://docs.rsshub.app/blog.html#zheng-cai-yun-qian-duan-ji-shu-tuan-dui",
         source:"/",
         target:"/zooTeam/blog" } ] },
+  "zuel.edu.cn":{ _name:"中南财经政法大学",
+    wap:[ { title:"通知公告",
+        docs:"https://docs.rsshub.app/univeristy.html#zhong-nan-cai-jing-zheng-fa-da-xue-tong-zhi-gong-gao",
+        source:[ "/",
+          "/notice/list.htm" ],
+        target:"/zuel/notice" } ] },
   "weibo.com":{ _name:"微博",
     ".":[ { title:"博主",
         docs:"https://docs.rsshub.app/social-media.html#wei-bo",
