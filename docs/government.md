@@ -30,7 +30,7 @@ pageClass: routes
 
 ### 最新消息
 
-<Route author="linbuxiao" example="/ccac/news/all" path="/ccac/news/:type/:lang?" :paramsDesc="['类别', '语言，留空为`sc`，支持`sc`（简中），`tc`（繁中），`en`（英文），`pt`（葡萄牙文）']">
+<Route author="linbuxiao" example="/ccac/news/all" path="/ccac/news/:type/:lang?" :paramsDesc="['类别', '语言，留空为`sc`，支持`sc`（简中），`tc`（繁中），`en`（英文），`pt`（葡萄牙文）']" puppeteer="1">
 
 | 全部  | 案件发布 | 调查报告或勘喻    | 年度报告         | 公署消息    |
 | --- | ---- | ---------- | ------------ | ------- |
@@ -941,7 +941,15 @@ pageClass: routes
 
 ### 拍卖信息 / 海关法规
 
-<Route author="Jeason0228" example="/gov/customs/list/paimai" path="/gov/customs/list/:gchannel"  :paramsDesc="['支持paimai,fagui等2个频道']" />
+<Route author="Jeason0228 TonyRL" example="/gov/customs/list/paimai" path="/gov/customs/list/:gchannel?" :paramsDesc="['支持 `paimai` 及 `fagui` 2个频道，默认为 `paimai`']" anticrawler="1" puppeteer="1" radar="1" rssbud="1">
+
+::: warning 注意
+
+由于区域限制，建议在国内 IP 的机器上自建
+
+:::
+
+</Route>
 
 ## 中华人民共和国教育部
 

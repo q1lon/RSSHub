@@ -45,7 +45,23 @@ Fill in parameter `query` with content after `http://export.arxiv.org/api/query?
 
 <RouteEn author="nczitzk" example="/bioone/journals/acta-chiropterologica" path="/bioone/journals/:journal?" :paramsDesc="['Journals, can be found in URL']"/>
 
+## caa.reviews
+
+### Book Reviews
+
+<RouteEn author="Fatpandac" example="/caareviews/book" path="/caareviews/book"/>
+
+### Exhibition Reviews
+
+<RouteEn author="Fatpandac" example="/caareviews/exhibition" path="/caareviews/exhibition"/>
+
+### Essays
+
+<RouteEn author="Fatpandac" example="/caareviews/essay" path="/caareviews/essay"/>
+
 ## Cell Journal
+
+### Current Issue
 
 <RouteEn author="yech1990" example="/cell/cell/current" path="/cell/cell/:category" supportScihub="1" />
 
@@ -159,8 +175,6 @@ New items may always at the end of the list, when the number of paper entries is
 ### Topics
 
 <RouteEn author="laampui" example="/technologyreview/humans-and-technology" path="/technologyreview/:category_name" :paramsDesc="['see below']" />
-
-
 
 | `:category_name` | Route |
 | -------- | ----- |
