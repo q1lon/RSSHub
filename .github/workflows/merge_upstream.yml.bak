@@ -1,0 +1,28 @@
+name: 'auto merge upstream'
+
+on:
+  push:
+  schedule:
+    - cron: '0 22 * * *'
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout codes'
+        uses: actions/checkout@v2
+      - name: merge upstream
+        run: |
+            ls -la
+            git config user.name q1lon
+            git config user.email keyron.zhang@gmail.com
+            git remote add upstream https://github.com/DIYgod/RSSHub.git
+            git remote -v
+            git fetch upstream
+            git checkout master
+            git reset --hard origin/master
+            git merge upstream/master -s recursive -X theirs --allow-unrelated-histories
+            git status
+            git add .
+            git commit -m 'upstream'
+            git push origin master --force

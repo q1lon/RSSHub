@@ -1,28 +1,16 @@
-name: 'auto merge upstream'
+name: Sync Fork 
 
 on:
-  push:
+  push: # push 时触发, 主要是为了测试配置有没有问题
   schedule:
-    - cron: '0 22 * * *'
-
+    - cron: '* */3 * * *' # 每3小时触发, 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
 jobs:
-  bot:
+  repo-sync:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Checkout codes'
-        uses: actions/checkout@v2
-      - name: merge upstream
-        run: |
-            ls -la
-            git config user.name q1lon
-            git config user.email keyron.zhang@gmail.com
-            git remote add upstream https://github.com/DIYgod/RSSHub.git
-            git remote -v
-            git fetch upstream
-            git checkout master
-            git reset --hard origin/master
-            git merge upstream/master -s recursive -X theirs --allow-unrelated-histories
-            git status
-            git add .
-            git commit -m 'upstream'
-            git push origin master --force
+      - uses: TG908/fork-sync@v1.6.3
+        with:
+          github_token: ${{ secrets.TOKEN }}
+          owner: DIYgod # fork 的上游仓库 user
+          head: master # fork 的上游仓库 branch
+          base: master # 本地仓库 branch
