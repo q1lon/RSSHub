@@ -21,7 +21,7 @@ jobs:
             git checkout master
             git stash 
             git pull --rebase
-            git merge upstream/master --allow-unrelated-histories
+            git merge upstream/master -s recursive -X theirs --allow-unrelated-histories
             git add .
             git commit -m 'upstream'
             git push origin master --force
