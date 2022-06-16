@@ -19,9 +19,8 @@ jobs:
             git remote -v
             git fetch upstream
             git checkout master
+            git pull --rebase
             git merge upstream/master --allow-unrelated-histories
-            git -c credential.helper= -c core.quotepath=false -c log.showSignature=false checkout --theirs -- .
-            git -c credential.helper= -c core.quotepath=false -c log.showSignature=false add --ignore-errors -A -f -- .
             git add .
             git commit -m 'upstream'
             git push origin master --force
