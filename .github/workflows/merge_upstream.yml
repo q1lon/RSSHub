@@ -24,4 +24,4 @@ jobs:
             git status
             git add .
             git commit -m 'upstream'
-            git push origin/master --force
+            git push origin master --force
