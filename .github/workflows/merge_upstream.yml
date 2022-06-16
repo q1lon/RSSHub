@@ -19,6 +19,7 @@ jobs:
             git remote -v
             git fetch upstream
             git checkout master
+            git stash 
             git pull --rebase
             git merge upstream/master --allow-unrelated-histories
             git add .
