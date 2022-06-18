@@ -23,6 +23,9 @@
     "/18comic/:category?/:time?/:order?/:keyword?": [
         "nczitzk"
     ],
+    "/19lou/:city?": [
+        "nczitzk"
+    ],
     "/35photo/actual": [
         "nczitzk"
     ],
@@ -488,6 +491,12 @@
     ],
     "/dockerhub/tag/:owner/:image": [
         "outloudvi"
+    ],
+    "/domp4/detail/:id": [
+        "savokiss"
+    ],
+    "/domp4/latest/:type?": [
+        "savokiss"
     ],
     "/dongqiudi/daily": [
         "HenryQW"
@@ -1208,11 +1217,11 @@
     "/icac/news/:lang?": [
         "linbuxiao, TonyRL"
     ],
-    "/ieee/:journal/latest/date/:sortType?": [
+    "/ieee/journal/:journal/:sortType?": [
         "Derekmini",
         "auto-bot-ty"
     ],
-    "/ieee/:journal/latest/vol/:sortType?": [
+    "/ieee/journal/:journal/recent/:sortType?": [
         "Derekmini",
         "auto-bot-ty"
     ],

@@ -73,6 +73,38 @@
       }
     ]
   },
+  "19lou.com": {
+    "_name": "19 楼",
+    ".": [
+      {
+        "title": "头条",
+        "docs": "https://docs.rsshub.app/bbs.html#19-lou-tou-tiao",
+        "source": [
+          "/"
+        ]
+      }
+    ],
+    "www": [
+      {
+        "title": "头条",
+        "docs": "https://docs.rsshub.app/bbs.html#19-lou-tou-tiao",
+        "source": [
+          "/"
+        ],
+        "target": "/19lou/www"
+      }
+    ],
+    "jiaxing": [
+      {
+        "title": "头条",
+        "docs": "https://docs.rsshub.app/bbs.html#19-lou-tou-tiao",
+        "source": [
+          "/"
+        ],
+        "target": "/19lou/jiaxing"
+      }
+    ]
+  },
   "35photo.pro": {
     "_name": "35PHOTO",
     ".": [
@@ -2180,6 +2212,32 @@
           "/r/:owner/:image/tags",
           "/_/:image"
         ]
+      }
+    ]
+  },
+  "domp4.cc": {
+    "_name": "domp4电影",
+    ".": [
+      {
+        "title": "最近更新",
+        "docs": "https://docs.rsshub.app/multimedia.html#domp4-ying-shi",
+        "source": [
+          "/",
+          "/custom/update.html"
+        ],
+        "target": "/domp4/latest/:type?"
+      },
+      {
+        "title": "剧集订阅",
+        "docs": "https://docs.rsshub.app/multimedia.html#domp4-ying-shi",
+        "source": "/html/:id",
+        "target": "/domp4/detail/:id"
+      },
+      {
+        "title": "剧集订阅",
+        "docs": "https://docs.rsshub.app/multimedia.html#domp4-ying-shi",
+        "source": "/detail/:id",
+        "target": "/domp4/detail/:id"
       }
     ]
   },
@@ -5138,12 +5196,12 @@
     "_name": "IEEE",
     "www": [
       {
-        "title": "latestVolume",
+        "title": "Journal",
         "docs": "https://docs.rsshub.app/journal.html#ieee-xplore",
         "source": "/*"
       },
       {
-        "title": "latestDate",
+        "title": "Recent",
         "docs": "https://docs.rsshub.app/journal.html#ieee-xplore",
         "source": "/*"
       }
