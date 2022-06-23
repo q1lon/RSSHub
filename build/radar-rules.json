@@ -639,6 +639,17 @@
       }
     ]
   },
+  "apnews.com": {
+    "_name": "AP News",
+    ".": [
+      {
+        "title": "话题",
+        "docs": "https://docs.rsshub.app/traditional-media.html#ap-news",
+        "source": "/hub/:topic",
+        "target": "/apnews/topics/:topic"
+      }
+    ]
+  },
   "appcenter.ms": {
     "_name": "App Center",
     "install": [
@@ -2059,6 +2070,20 @@
         "docs": "https://docs.rsshub.app/other.html#guo-jia-liu-xue-wang",
         "source": "/*",
         "target": "/csc/notice/lqgg"
+      }
+    ]
+  },
+  "cscse.edu.cn": {
+    "_name": "中国留学网",
+    ".": [
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/study.html#zhong-guo-liu-xue-wang-tong-zhi-gong-gao",
+        "source": [
+          "/cscse/index/tzgg",
+          "/"
+        ],
+        "target": "/cscse/tzgg"
       }
     ]
   },
@@ -3617,30 +3642,23 @@
   },
   "gcores.com": {
     "_name": "机核网",
-    "www": [
+    ".": [
       {
-        "title": "资讯",
-        "docs": "https://docs.rsshub.app/program-update.html#eagle",
-        "source": "/news",
-        "target": "/gcores/category/news"
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/new-media.html#ji-he-wang-fen-lei",
+        "source": [
+          "/:category"
+        ],
+        "target": "/gcores/category/:category"
       },
       {
-        "title": "视频",
-        "docs": "https://docs.rsshub.app/program-update.html#eagle",
-        "source": "/videos",
-        "target": "/gcores/category/videos"
-      },
-      {
-        "title": "电台",
-        "docs": "https://docs.rsshub.app/program-update.html#eagle",
-        "source": "/radios",
-        "target": "/gcores/category/radios"
-      },
-      {
-        "title": "文章",
-        "docs": "https://docs.rsshub.app/program-update.html#eagle",
-        "source": "/articles",
-        "target": "/gcores/category/articles"
+        "title": "标签",
+        "docs": "https://docs.rsshub.app/new-media.html#ji-he-wang-biao-qian",
+        "source": [
+          "/categories/:tag",
+          "/"
+        ],
+        "target": "/gcores/tag/:tag"
       }
     ]
   },
@@ -4547,6 +4565,20 @@
           "/"
         ],
         "target": "/hackernews/:section?/:type?/:user?"
+      }
+    ]
+  },
+  "hackertalk.net": {
+    "_name": "Hacker Talk 黑客说",
+    ".": [
+      {
+        "title": "最新的帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#hacker-talk-hei-ke-shuo",
+        "source": [
+          "/?tab=new",
+          "/"
+        ],
+        "target": "/hackertalk"
       }
     ]
   },
@@ -6885,6 +6917,17 @@
       }
     ]
   },
+  "gotokeep.com": {
+    "_name": "Keep",
+    ".": [
+      {
+        "title": "用户运动日记",
+        "docs": "https://docs.rsshub.app/social-media.html#keep",
+        "source": "/users/:id",
+        "target": "/keep/user/:id"
+      }
+    ]
+  },
   "kemono.party": {
     "_name": "Kemono",
     ".": [
@@ -7684,13 +7727,24 @@
         "title": "分类",
         "docs": "https://docs.rsshub.app/finance.html#mei-jing-wang",
         "source": "/",
-        "targer": "/nbd"
+        "target": "/nbd"
       },
       {
         "title": "重磅原创",
         "docs": "https://docs.rsshub.app/finance.html#mei-jing-wang",
         "source": "/",
-        "targer": "/nbd/daily"
+        "target": "/nbd/daily"
+      }
+    ]
+  },
+  "ncwu.edu.cn": {
+    "_name": "华北水利水电大学",
+    ".": [
+      {
+        "title": "学校通知",
+        "docs": "https://docs.rsshub.app/university.html#hua-bei-shui-li-shui-dian-da-xue",
+        "source": "/xxtz.htm",
+        "target": "/ncwu/notice"
       }
     ]
   },
@@ -8315,6 +8369,18 @@
       }
     ]
   },
+  "oceanengine.com": {
+    "_name": "巨量算数",
+    "trendinsight": [
+      {
+        "title": "抖音/头条指数波峰",
+        "docs": "https://docs.rsshub.app/other.html#ju-liang-suan-shu-suan-shu-zhi-shu",
+        "source": [
+          "/arithmetic-index/analysis"
+        ]
+      }
+    ]
+  },
   "odaily.news": {
     "_name": "Odaily 星球日报",
     ".": [
@@ -8718,6 +8784,18 @@
           "/articles/:name"
         ],
         "target": "/polkaworld/newest"
+      }
+    ]
+  },
+  "prestige-av.com": {
+    "_name": "Prestige 蚊香社",
+    ".": [
+      {
+        "title": "系列作品",
+        "docs": "https://docs.rsshub.app/multimedia.html#prestige-wen-xiang-she",
+        "source": [
+          "/goods/goods_list.php"
+        ]
       }
     ]
   },
@@ -12859,17 +12937,6 @@
         "title": "郵便・荷物の追跡",
         "docs": "https://docs.rsshub.app/other.html#ri-ben-you-bian-you-bian-zhui-ji-サービス",
         "source": "/services/srv/search/direct"
-      }
-    ]
-  },
-  "apnews.com": {
-    "_name": "AP News",
-    ".": [
-      {
-        "title": "话题",
-        "docs": "https://docs.rsshub.app/traditional-media.html#ap-news",
-        "source": "/:topic",
-        "target": "/apnews/topics/:topic"
       }
     ]
   },
