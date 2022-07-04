@@ -5361,10 +5361,10 @@ enstore@^1.0.1:
   dependencies:
     monotonic-timestamp "0.0.8"
 
-entities@3.0.1, entities@~3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/entities/-/entities-3.0.1.tgz#2b887ca62585e96db3903482d336c1006c3001d4"
-  integrity sha512-WiyBqoomrwMdFG1e0kqvASYfnlb0lp8M5o5Fw2OFq1hNZxxcNk8Ik0Xm7LxzBhuidnZB/UtBqVCgUz3kBOP51Q==
+entities@4.3.0, entities@^4.2.0, entities@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/entities/-/entities-4.3.0.tgz#62915f08d67353bb4eb67e3d62641a4059aec656"
+  integrity sha512-/iP1rZrSEJ0DTlPiX+jbzlA3eVkY/e8L8SozroF395fIqE3TYF/Nz7YOMAawta+vLmyJ/hkGNNPcSbMADCCXbg==
 
 entities@^1.1.1, entities@~1.1.1:
   version "1.1.2"
@@ -5376,10 +5376,10 @@ entities@^2.0.0, entities@^2.0.3:
   resolved "https://registry.yarnpkg.com/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
   integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
 
-entities@^4.2.0, entities@^4.3.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/entities/-/entities-4.3.0.tgz#62915f08d67353bb4eb67e3d62641a4059aec656"
-  integrity sha512-/iP1rZrSEJ0DTlPiX+jbzlA3eVkY/e8L8SozroF395fIqE3TYF/Nz7YOMAawta+vLmyJ/hkGNNPcSbMADCCXbg==
+entities@~3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/entities/-/entities-3.0.1.tgz#2b887ca62585e96db3903482d336c1006c3001d4"
+  integrity sha512-WiyBqoomrwMdFG1e0kqvASYfnlb0lp8M5o5Fw2OFq1hNZxxcNk8Ik0Xm7LxzBhuidnZB/UtBqVCgUz3kBOP51Q==
 
 env-paths@^2.2.0:
   version "2.2.1"
@@ -11594,10 +11594,10 @@ ramda@^0.26.1:
   resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.26.1.tgz#8d41351eb8111c55353617fc3bbffad8e4d35d06"
   integrity sha512-hLWjpy7EnsDBb0p+Z3B7rPi3GDeRG5ZtiI33kJhTt+ORCd38AbAIjB/9zRIUoeTbE/AVX5ZkU7m6bznsvrf8eQ==
 
-rand-user-agent@1.0.69:
-  version "1.0.69"
-  resolved "https://registry.yarnpkg.com/rand-user-agent/-/rand-user-agent-1.0.69.tgz#40a6f65aa41013ceb14caad216209483edcfe3cf"
-  integrity sha512-IzbAyavqJcOzAyJw4EMph51V7UACDMYUP4b2Bztq1lT1fzP0GKbjL2mP0vXFtqu0w4D/RCR9nd6+9bGjb5JbZg==
+rand-user-agent@1.0.70:
+  version "1.0.70"
+  resolved "https://registry.yarnpkg.com/rand-user-agent/-/rand-user-agent-1.0.70.tgz#b1cd46bd069c01f096a4d2ed1738a0d8fdea80a6"
+  integrity sha512-0oSPHBXrjqt8y8Iu4bdY7WVvveb/p1/FQFQPPp9PHz6h2xj6exel/vaeUdGok+8ui89KGz5Vb5OSbO78s+JnzQ==
 
 randexp@0.4.6:
   version "0.4.6"
