@@ -55,7 +55,8 @@
     ],
     "/36kr/search/article/:keyword": [
         "xyqfer",
-        "kt286"
+        "kt286",
+        "nczitzk"
     ],
     "/36kr/user/:uid": [
         "nczitzk"
@@ -113,6 +114,15 @@
     ],
     "/abskoop/": [
         "zhenhappy"
+    ],
+    "/acfun/article/:categoryId/:sortType?/:timeRange?": [
+        "TonyRL"
+    ],
+    "/acfun/bangumi/:id": [
+        "xyqfer"
+    ],
+    "/acfun/user/video/:uid": [
+        "wdssmq"
     ],
     "/acm-ecnu/contest/:category?": [
         "a180285"
@@ -990,6 +1000,9 @@
     ],
     "/gov/moe/:type": [
         "Crawler995"
+    ],
+    "/gov/nmpa/:path+": [
+        "TonyRL"
     ],
     "/gov/nrta/news/:category?": [
         "yuxinliu-alex"
@@ -3362,8 +3375,6 @@
     "/nhentai/search/:keyword/:mode?": [],
     "/nhentai/:key/:keyword/:mode?": [],
     "/ltaaa/:category?": [],
-    "/acfun/bangumi/:id": [],
-    "/acfun/user/video/:uid": [],
     "/autotrader/:query": [],
     "/geekpark/breakingnews": [],
     "/baidu/doodles": [],

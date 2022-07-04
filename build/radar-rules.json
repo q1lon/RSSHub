@@ -514,6 +514,27 @@
       }
     ]
   },
+  "acfun.cn": {
+    "_name": "AcFun",
+    "www": [
+      {
+        "tilte": "番剧",
+        "docs": "https://docs.rsshub.app/anime.html#acfun-fan-ju",
+        "source": "/bangumi/:id"
+      },
+      {
+        "title": "用户投稿",
+        "docs": "https://docs.rsshub.app/anime.html#acfun-yong-hu-tou-gao",
+        "source": "/u/:id",
+        "target": "/acfun/user/video/:id"
+      },
+      {
+        "title": "文章",
+        "docs": "https://docs.rsshub.app/anime.html#acfun",
+        "source": "/v/:categoryId/index.htm"
+      }
+    ]
+  },
   "ecnu.edu.cn": {
     "_name": "ACM-ECNU",
     "acm": [
@@ -4374,9 +4395,21 @@
     ".": [
       {
         "title": "分类",
-        "docs": "https://docs.rsshub.app/government.html#nrta-gov",
+        "docs": "https://docs.rsshub.app/government.html#guo-jia-guang-bo-dian-shi-zong-ju",
         "source": [
           "/col/*category"
+        ]
+      }
+    ]
+  },
+  "nmpa.gov.cn": {
+    "_name": "国家药品监督管理局",
+    ".": [
+      {
+        "title": "通用",
+        "docs": "https://docs.rsshub.app/government.html#guo-jia-yao-pin-jian-du-guan-li-ju",
+        "source": [
+          "/*path"
         ]
       }
     ]
@@ -8899,7 +8932,7 @@
         "title": "软微-通知公告",
         "docs": "https://docs.rsshub.app/university.html#bei-jing-da-xue",
         "source": [
-          "index.php/newscenter/notice",
+          "/index.php/newscenter/notice",
           "/"
         ],
         "target": "/pku/ss/notice"
@@ -8908,7 +8941,7 @@
         "title": "软微-招生通知",
         "docs": "https://docs.rsshub.app/university.html#bei-jing-da-xue",
         "source": [
-          "admission/admnotice",
+          "/admission/admnotice",
           "/"
         ],
         "target": "/pku/ss/admission"
@@ -8917,7 +8950,7 @@
         "title": "软微-硕士统考招生",
         "docs": "https://docs.rsshub.app/university.html#bei-jing-da-xue",
         "source": [
-          "admission/admbrochure/admission01",
+          "/admission/admbrochure/admission01",
           "/"
         ],
         "target": "/pku/ss/pgadmin"
@@ -9731,6 +9764,19 @@
         "source": [
           "/forum/:id"
         ]
+      }
+    ]
+  },
+  "slowmist.com": {
+    "_name": "慢雾科技 SLOWMIST",
+    ".": [
+      {
+        "title": "动态",
+        "docs": "https://docs.rsshub.app/new-media.html#man-wu-ke-ji",
+        "source": [
+          "/zh/news.html"
+        ],
+        "target": "/slowmist/:type?"
       }
     ]
   },
@@ -13673,22 +13719,6 @@
         "title": "内容",
         "docs": "https://docs.rsshub.app/government.html#guo-jia-xin-wen-chu-ban-shu",
         "source": "/nppa/contents/:channel/:content"
-      }
-    ]
-  },
-  "acfun.cn": {
-    "_name": "AcFun",
-    "www": [
-      {
-        "tilte": "番剧",
-        "docs": "https://docs.rsshub.app/anime.html#acfun-fan-ju",
-        "source": "/bangumi/:id"
-      },
-      {
-        "title": "用户投稿",
-        "docs": "https://docs.rsshub.app/anime.html#acfun-yong-hu-tou-gao",
-        "source": "/u/:id",
-        "target": "/acfun/user/video/:id"
       }
     ]
   },
