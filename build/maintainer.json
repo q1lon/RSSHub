@@ -495,6 +495,13 @@
     "/dapenti/subject/:id": [
         "xyqfer"
     ],
+    "/darwinawards/all": [
+        "zoenglinghou",
+        "nczitzk"
+    ],
+    "/darwinawards/": [
+        "nczitzk"
+    ],
     "/dayanzai/dayanzai/:category/:fulltext?": [
         "nitezs"
     ],
@@ -791,6 +798,9 @@
     "/ezone/:category?": [
         "nczitzk"
     ],
+    "/fda/cdrh": [
+        "nczitzk"
+    ],
     "/ff14/global/:lang/:type?": [
         "chengyuhui"
     ],
@@ -1007,6 +1017,10 @@
     "/gov/nrta/news/:category?": [
         "yuxinliu-alex"
     ],
+    "/gov/nsfc/news/:type?": [
+        "Derekmini",
+        "nczitzk"
+    ],
     "/gov/pbc/goutongjiaoliu": [
         "nczitzk"
     ],
@@ -1031,6 +1045,9 @@
     "/gov/hebei/czt/xwdt/:category?": [
         "nczitzk"
     ],
+    "/gov/shaanxi/kjt/:id?": [
+        "nczitzk"
+    ],
     "/gov/shenzhen/hrss/szksy/:caty/:page?": [
         "zlasd"
     ],
@@ -1039,6 +1056,9 @@
     ],
     "/gov/shanghai/rsj/ksxm": [
         "Fatpandac"
+    ],
+    "/gov/shanghai/yjj/:path+": [
+        "nczitzk"
     ],
     "/gov/shanghai/wsjkw/yqtb": [
         "zcf0508"
@@ -1890,9 +1910,6 @@
     "/npm/package/:name": [
         "Fatpandac"
     ],
-    "/nsfc/news/:type?": [
-        "Derekmini"
-    ],
     "/ntdtv/:language/:id": [
         "Fatpandac"
     ],
@@ -2174,6 +2191,10 @@
         "nczitzk"
     ],
     "/ruc/hr/:category?": [
+        "nczitzk"
+    ],
+    "/sakurazaka46/blog/:id?": [
+        "victor21813",
         "nczitzk"
     ],
     "/samsung/research/blog": [
@@ -3726,7 +3747,6 @@
     "/hinatazaka46/news": [],
     "/keyakizaka46/blog": [],
     "/hinatazaka46/blog": [],
-    "/sakurazaka46/blog": [],
     "/coolapk/tuwen/:type?": [],
     "/coolapk/tuwen-xinxian": [],
     "/coolapk/toutiao/:type?": [],
@@ -4167,7 +4187,6 @@
     "/manxiaosi/book/:id": [],
     "/jlu/oa": [],
     "/hfut/tzgg": [],
-    "/darwinawards/all": [],
     "/scvtc/xygg": [],
     "/scut/scet/notice": [],
     "/scut/seie/news_center": [],

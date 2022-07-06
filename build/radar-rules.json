@@ -2229,6 +2229,20 @@
       }
     ]
   },
+  "darwinawards.com": {
+    "_name": "Darwin Awards",
+    ".": [
+      {
+        "title": "Award Winners",
+        "docs": "https://docs.rsshub.app/other.html#darwin-awards-award-winners",
+        "source": [
+          "/darwin",
+          "/"
+        ],
+        "target": "/darwinawards"
+      }
+    ]
+  },
   "dayanzai.me": {
     "_name": "大眼仔旭",
     ".": [
@@ -3451,6 +3465,20 @@
       }
     ]
   },
+  "fda.gov": {
+    "_name": "U.S. Food and Drug Administration",
+    ".": [
+      {
+        "title": "CDRHNew",
+        "docs": "https://docs.rsshub.app/government.html#mei-guo-shi-pin-yao-pin-jian-du-guan-li-ju-cdrhnew",
+        "source": [
+          "/medical-devices/news-events-medical-devices/cdrhnew-news-and-updates",
+          "/"
+        ],
+        "target": "/fda/cdrh"
+      }
+    ]
+  },
   "feng.com": {
     "_name": "威锋",
     ".": [
@@ -4390,6 +4418,18 @@
       }
     ]
   },
+  "nmpa.gov.cn": {
+    "_name": "国家药品监督管理局",
+    ".": [
+      {
+        "title": "通用",
+        "docs": "https://docs.rsshub.app/government.html#guo-jia-yao-pin-jian-du-guan-li-ju",
+        "source": [
+          "/*path"
+        ]
+      }
+    ]
+  },
   "nrta.gov.cn": {
     "_name": "国家广播电视总局",
     ".": [
@@ -4402,15 +4442,40 @@
       }
     ]
   },
-  "nmpa.gov.cn": {
-    "_name": "国家药品监督管理局",
+  "nsfc.gov.cn": {
+    "_name": "国家自然科学基金委员会",
     ".": [
       {
-        "title": "通用",
-        "docs": "https://docs.rsshub.app/government.html#guo-jia-yao-pin-jian-du-guan-li-ju",
+        "title": "基金要闻",
+        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui-ji-jin-yao-wen",
         "source": [
-          "/*path"
-        ]
+          "/*"
+        ],
+        "target": "/nsfc/news/jjyw"
+      },
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui-ji-jin-yao-wen",
+        "source": [
+          "/*"
+        ],
+        "target": "/nsfc/news/tzgg"
+      },
+      {
+        "title": "资助成果",
+        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui-ji-jin-yao-wen",
+        "source": [
+          "/*"
+        ],
+        "target": "/nsfc/news/zzcg"
+      },
+      {
+        "title": "科普快讯",
+        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui-ji-jin-yao-wen",
+        "source": [
+          "/*"
+        ],
+        "target": "/nsfc/news/kpkx"
       }
     ]
   },
@@ -4466,11 +4531,33 @@
     "rsj": [
       {
         "title": "上海市职业能力考试院 考试项目",
-        "docs": "https://docs.rsshub.app/government.html#shang-hai-shi-zhi-ye-neng-li-kao-shi-yuan-kao-shi-xiang-mu",
+        "docs": "https://docs.rsshub.app/government.html#shang-hai-shi-ren-min-zheng-fu-shang-hai-shi-zhi-ye-neng-li-kao-shi-yuan-kao-shi-xiang-mu",
         "source": [
           "/"
         ],
         "target": "/gov/shanghai/rsj/ksxm"
+      }
+    ],
+    "yjj": [
+      {
+        "title": "上海市药品监督管理局",
+        "docs": "https://docs.rsshub.app/government.html#shang-hai-shi-ren-min-zheng-fu-shang-hai-shi-yao-pin-jian-du-guan-li-ju",
+        "source": [
+          "/"
+        ]
+      }
+    ]
+  },
+  "shaanxi.gov.cn": {
+    "_name": "陕西省人民政府",
+    "kjt": [
+      {
+        "title": "陕西省科学技术厅",
+        "docs": "https://docs.rsshub.app/government.html#shan-xi-ren-min-zheng-fu-shan-xi-sheng-ke-xue-ji-shu-ting",
+        "source": [
+          "/view/iList.jsp",
+          "/"
+        ]
       }
     ]
   },
@@ -8449,35 +8536,6 @@
       }
     ]
   },
-  "nsfc.gov.cn": {
-    "_name": "国家自然科学基金委员会",
-    "www": [
-      {
-        "title": "基金要闻",
-        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui",
-        "source": "/*",
-        "target": "/nsfc/news/jjyw"
-      },
-      {
-        "title": "通知公告",
-        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui",
-        "source": "/*",
-        "target": "/nsfc/news/tzgg"
-      },
-      {
-        "title": "资助成果",
-        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui",
-        "source": "/*",
-        "target": "/nsfc/news/zzcg"
-      },
-      {
-        "title": "科普快讯",
-        "docs": "https://docs.rsshub.app/other.html#guo-jia-zi-ran-ke-xue-ji-jin-wei-yuan-hui",
-        "source": "/*",
-        "target": "/nsfc/news/kpkx"
-      }
-    ]
-  },
   "ntdtv.com": {
     "_name": "新唐人电视台",
     "www": [
@@ -9362,6 +9420,19 @@
           "/"
         ],
         "target": "/ruc/hr/:category?"
+      }
+    ]
+  },
+  "sakurazaka46.com": {
+    "_name": "櫻坂46",
+    ".": [
+      {
+        "title": "公式ブログ",
+        "docs": "https://docs.rsshub.app/new-media.html#ban-dao-xi-lie-guan-wang-zi-xun-ying-ban-46-bo-ke",
+        "source": [
+          "/s/s46/diary/blog/list",
+          "/"
+        ]
       }
     ]
   },
