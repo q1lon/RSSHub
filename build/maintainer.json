@@ -154,6 +154,15 @@
     "/aliyun/notice/:type?": [
         "muzea"
     ],
+    "/allrecode/news": [
+        "nczitzk"
+    ],
+    "/allrecode/recommends": [
+        "nczitzk"
+    ],
+    "/allrecode/:category?": [
+        "nczitzk"
+    ],
     "/ally/rail/:category?/:topic?": [
         "Rongronggg9"
     ],
@@ -261,6 +270,9 @@
         "nczitzk"
     ],
     "/bioone/journals/:journal?": [
+        "nczitzk"
+    ],
+    "/biquge/:url": [
         "nczitzk"
     ],
     "/bit/rszhaopin": [
@@ -2197,6 +2209,9 @@
         "victor21813",
         "nczitzk"
     ],
+    "/sakurazaka46/news": [
+        "nczitzk"
+    ],
     "/samsung/research/blog": [
         "nczitzk"
     ],
@@ -2216,6 +2231,9 @@
     "/scitation/:pub/:jrn/:sec": [
         "Derekmini",
         "auto-bot-ty"
+    ],
+    "/scvtc/xygg": [
+        "nczitzk"
     ],
     "/sdu/cmse/:type?": [
         "Ji4n1ng"
@@ -3202,8 +3220,6 @@
     "/hopper/:lowestOnly/:from/:to?": [],
     "/mafengwo/note/:type": [],
     "/mafengwo/ziyouxing/:code": [],
-    "/novel/biquge/:id": [],
-    "/novel/biqugeinfo/:id/:limit?": [],
     "/novel/uukanshu/:uid": [],
     "/novel/wenxuemi/:id1/:id2": [],
     "/novel/booksky/:id": [],
@@ -4187,7 +4203,6 @@
     "/manxiaosi/book/:id": [],
     "/jlu/oa": [],
     "/hfut/tzgg": [],
-    "/scvtc/xygg": [],
     "/scut/scet/notice": [],
     "/scut/seie/news_center": [],
     "/onejav/:type/:key?": [],
