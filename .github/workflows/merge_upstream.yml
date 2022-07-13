@@ -8,7 +8,7 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: tgymnich/fork-sync@latest
+      - uses: tgymnich/fork-sync@v1.2.1
         with:
           github_token: ${{ secrets.TOKEN }}
           #owner: q1lon # 
