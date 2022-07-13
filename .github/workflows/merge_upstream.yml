@@ -11,6 +11,7 @@ jobs:
       - uses: tgymnich/fork-sync@v1.4
         with:
           github_token: ${{ secrets.PERSONAL_TOKEN }}
-          owner: q1lon # 
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          owner: DIYgod # 
           head: master # fork 的上游仓库 branch
           base: master # 本地仓库 branch
