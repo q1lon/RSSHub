@@ -10,8 +10,9 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v1.4
         with:
-          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          # github_token: ${{ secrets.PERSONAL_TOKEN }}
           token: ${{ secrets.PERSONAL_TOKEN }}
           owner: DIYgod # 
           head: master # fork 的上游仓库 branch
           base: master # 本地仓库 branch
+          auto_approve: true # 自动同意 PR
