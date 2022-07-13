@@ -8,9 +8,9 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: tgymnich/fork-sync@v1.4
+      - uses: tgymnich/fork-sync@v1.6.3
         with:
-          # github_token: ${{ secrets.PERSONAL_TOKEN }}
+          github_token: ${{ secrets.PERSONAL_TOKEN }}
           token: ${{ secrets.PERSONAL_TOKEN }}
           owner: DIYgod # 
           head: master # fork 的上游仓库 branch
