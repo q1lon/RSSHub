@@ -1046,6 +1046,9 @@
     "/gov/moj/aac/news/:type?": [
         "TonyRL"
     ],
+    "/gov/nifdc/:path+": [
+        "nczitzk"
+    ],
     "/gov/nmpa/:path+": [
         "TonyRL"
     ],
@@ -1779,6 +1782,12 @@
         "nczitzk"
     ],
     "/mydrivers/:type?/:id?": [
+        "nczitzk"
+    ],
+    "/myfigurecollection/activity/:category?/:language?/:latestAdditions?/:latestEdits?/:latestAlerts?/:latestPictures?": [
+        "nczitzk"
+    ],
+    "/myfigurecollection/:category?/:language?": [
         "nczitzk"
     ],
     "/mygopen/:label?": [
@@ -2596,6 +2605,13 @@
     "/tisi/latest": [
         "Fatpandac"
     ],
+    "/tju/cic/:type?": [
+        "SuperPung"
+    ],
+    "/tju/oaa/:type?": [
+        "AmosChenYQ",
+        "SuperPung"
+    ],
     "/tokeninsight/blog/:lang?": [
         "fuergaosi233"
     ],
@@ -3407,7 +3423,6 @@
     "/scut/jwc/news": [],
     "/wzbc/:type?": [],
     "/henu/:type?": [],
-    "/tjpyu/ooa/:type?": [],
     "/nku/jwc/:type?": [],
     "/buaa/news/:type": [],
     "/zjut/:type": [],
