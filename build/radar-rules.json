@@ -8768,9 +8768,9 @@
       }
     ]
   },
-  "yjsy.ncepu.edu.cn": {
+  "ncepu.edu.cn": {
     "_name": "华北电力大学研究生院",
-    ".": [
+    "yjsy": [
       {
         "title": "通知公告",
         "docs": " https://docs.rsshub.app/university.html#hua-bei-dian-li-da-xue",
@@ -8788,6 +8788,15 @@
           "/"
         ],
         "target": "/ncepu/master/zsxx"
+      },
+      {
+        "title": "研究生培养信息",
+        "docs": "https://docs.rsshub.app/university.html#hua-bei-dian-li-da-xue",
+        "source": [
+          "/pyxx/pyxx/index.htm",
+          "/"
+        ],
+        "target": "/ncepu/master/pyxx"
       }
     ]
   },
@@ -8907,6 +8916,40 @@
           "/"
         ],
         "target": "/newsmarket/:category?"
+      }
+    ]
+  },
+  "nga.cn": {
+    "_name": "NGA",
+    "bbs": [
+      {
+        "title": "分区帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#nga",
+        "source": "/thread.php"
+      },
+      {
+        "title": "帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#nga",
+        "source": "/read.php"
+      }
+    ]
+  },
+  "178.com": {
+    "_name": "NGA",
+    "nga": [
+      {
+        "title": "分区帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#nga-fen-qu-tie-zi",
+        "source": [
+          "/thread.php"
+        ]
+      },
+      {
+        "title": "帖子",
+        "docs": "https://docs.rsshub.app/bbs.html#nga-tie-zi",
+        "source": [
+          "/read.php"
+        ]
       }
     ]
   },
@@ -11781,6 +11824,53 @@
         "target": "/tju/cic/forum"
       }
     ],
+    "news": [
+      {
+        "title": "新闻网 - 聚焦天大",
+        "docs": "https://docs.rsshub.app/university.html#tian-jin-da-xue-xin-wen-wang",
+        "source": [
+          "/jjtd.htm",
+          "/"
+        ],
+        "target": "/tju/news/focus"
+      },
+      {
+        "title": "新闻网 - 综合新闻",
+        "docs": "https://docs.rsshub.app/university.html#tian-jin-da-xue-xin-wen-wang",
+        "source": [
+          "/zhxw.htm",
+          "/"
+        ],
+        "target": "/tju/news/general"
+      },
+      {
+        "title": "新闻网 - 校内新闻",
+        "docs": "https://docs.rsshub.app/university.html#tian-jin-da-xue-xin-wen-wang",
+        "source": [
+          "/xnxw1/qb.htm",
+          "/"
+        ],
+        "target": "/tju/news/internal"
+      },
+      {
+        "title": "新闻网 - 媒体报道",
+        "docs": "https://docs.rsshub.app/university.html#tian-jin-da-xue-xin-wen-wang",
+        "source": [
+          "/mtbd.htm",
+          "/"
+        ],
+        "target": "/tju/news/media"
+      },
+      {
+        "title": "新闻网 - 图说天大",
+        "docs": "https://docs.rsshub.app/university.html#tian-jin-da-xue-xin-wen-wang",
+        "source": [
+          "/tstd.htm",
+          "/"
+        ],
+        "target": "/tju/news/picture"
+      }
+    ],
     "oaa": [
       {
         "title": "教务处 - 新闻动态",
@@ -13914,21 +14004,6 @@
         "docs": "https://docs.rsshub.app/game.html#epicgames-freegame",
         "source": "/store/zh-CN/free-games",
         "target": "/epicgames/freegames"
-      }
-    ]
-  },
-  "nga.cn": {
-    "_name": "NGA",
-    "bbs": [
-      {
-        "title": "分区帖子",
-        "docs": "https://docs.rsshub.app/bbs.html#nga",
-        "source": "/thread.php"
-      },
-      {
-        "title": "帖子",
-        "docs": "https://docs.rsshub.app/bbs.html#nga",
-        "source": "/read.php"
       }
     ]
   },

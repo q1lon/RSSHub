@@ -1871,6 +1871,13 @@
     "/newsmarket/:category?": [
         "nczitzk"
     ],
+    "/nga/forum/:fid/:recommend?": [
+        "xyqfer"
+    ],
+    "/nga/post/:tid/:authorId?": [
+        "xyqfer",
+        "syrinka"
+    ],
     "/ngocn2/:category?": [
         "nczitzk"
     ],
@@ -2630,6 +2637,9 @@
         "Fatpandac"
     ],
     "/tju/cic/:type?": [
+        "SuperPung"
+    ],
+    "/tju/news/:type?": [
         "SuperPung"
     ],
     "/tju/oaa/:type?": [
@@ -3562,8 +3572,6 @@
     "/coolbuy/newest": [],
     "/miniflux/subscription/:parameters?": [],
     "/miniflux/:feeds/:parameters?": [],
-    "/nga/forum/:fid/:recommend?": [],
-    "/nga/post/:tid": [],
     "/nautilus/topic/:tid": [],
     "/anigamer/new_anime": [],
     "/anigamer/anime/:sn": [],
