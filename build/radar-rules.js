@@ -386,6 +386,12 @@
         docs:"https://docs.rsshub.app/programming.html#ACM-ECNU",
         source:[ "/contest/" ],
         target:"/acm-ecnu/contest/public" } ] },
+  "acs.org":{ _name:"American Chemistry Society",
+    pubs:[ { title:"Journal",
+        docs:"https://docs.rsshub.app/journal.html#american-chemistry-society",
+        source:[ "/journal/:id",
+          "/" ],
+        target:"/acs/journal/:id" } ] },
   "aotter.net":{ _name:"電獺少女",
     agirls:[ { title:"分類",
         docs:"https://docs.rsshub.app/new-media.html##dian-ta-shao-nu",
@@ -4880,27 +4886,37 @@
         target:"/newsmarket/:category?" } ] },
   "nga.cn":{ _name:"NGA",
     bbs:[ { title:"分区帖子",
-        docs:"https://docs.rsshub.app/bbs.html#nga",
+        docs:"https://docs.rsshub.app/bbs.html#nga-fen-qu-tie-zi",
         source:"/thread.php",
         target:(params, url) => new URL(url).searchParams.get('fid') && `/nga/forum/${new URL(url).searchParams.get('fid')}` },
       { title:"帖子",
-        docs:"https://docs.rsshub.app/bbs.html#nga",
+        docs:"https://docs.rsshub.app/bbs.html#nga-tie-zi",
         source:"/read.php",
-        target:(params, url) => new URL(url).searchParams.get('tid') && `/nga/post/${new URL(url).searchParams.get('tid')}` } ] },
+        target:(params, url) => new URL(url).searchParams.get('tid') && `/nga/post/${new URL(url).searchParams.get('tid')}` },
+      { title:"帖子 - 只看作者",
+        docs:"https://docs.rsshub.app/bbs.html#nga-tie-zi",
+        source:"/read.php",
+        target:(params, url, document) => {
+                    const tid = new URL(url).searchParams.get('tid');
+                    const authorId = document.documentElement.innerHTML.match(/commonui\.userInfo\.setAll\(\s{3}{"(\d+)"/)[1];
+                    return `/nga/post/${tid}/${authorId}`;
+                } } ] },
   "178.com":{ _name:"NGA",
     nga:[ { title:"分区帖子",
         docs:"https://docs.rsshub.app/bbs.html#nga-fen-qu-tie-zi",
-        source:[ "/thread.php" ],
-        target:(params, url) => {
-                    const fid = new URL(url).searchParams.get('fid');
-                    return `/nga/forum/${fid}`;
-                } },
+        source:"/thread.php",
+        target:(params, url) => new URL(url).searchParams.get('fid') && `/nga/forum/${new URL(url).searchParams.get('fid')}` },
       { title:"帖子",
         docs:"https://docs.rsshub.app/bbs.html#nga-tie-zi",
-        source:[ "/read.php" ],
-        target:(params, url) => {
+        source:"/read.php",
+        target:(params, url) => new URL(url).searchParams.get('tid') && `/nga/post/${new URL(url).searchParams.get('tid')}` },
+      { title:"帖子 - 只看作者",
+        docs:"https://docs.rsshub.app/bbs.html#nga-tie-zi",
+        source:"/read.php",
+        target:(params, url, document) => {
                     const tid = new URL(url).searchParams.get('tid');
-                    return `/nga/post/${tid}`;
+                    const authorId = document.documentElement.innerHTML.match(/commonui\.userInfo\.setAll\(\s{3}{"(\d+)"/)[1];
+                    return `/nga/post/${tid}/${authorId}`;
                 } } ] },
   "ngocn2.org":{ _name:"NGOCN",
     ".":[ { title:"分类",
@@ -5243,6 +5259,15 @@
                         const query = searchParams.has('q') ? searchParams.get('q') : '';
                         return `/nyaa/search/${query}`;
                     }
+                } },
+      { title:"用户",
+        docs:"https://docs.rsshub.app/multimedia.html#nyaa-yong-hu",
+        source:"/user/:username",
+        target:(params, url) => {
+                    url = new URL(url);
+                    if (url.hostname.split('.')[0] === 'nyaa') {
+                        return `/nyaa/user/${params.username}`;
+                    }
                 } } ],
     sukebei:[ { title:"sukebei 搜索结果",
         docs:"https://docs.rsshub.app/multimedia.html#nyaa-sukebei-sou-suo-jie-guo",
@@ -5251,7 +5276,11 @@
                     const searchParams = new URL(url).searchParams;
                     const query = searchParams.has('q') ? searchParams.get('q') : '';
                     return `/nyaa/sukebei/search/${query}`;
-                } } ] },
+                } },
+      { title:"sukebei 用户",
+        docs:"https://docs.rsshub.app/multimedia.html#nyaa-sukebei-yong-hu",
+        source:"/user/:username",
+        target:(params) => `/nyaa/sukebei/user/${params.username}` } ] },
   "nytimes.com":{ _name:"纽约时报",
     ".":[ { title:"新闻简报",
         docs:"https://docs.rsshub.app/traditional-media.html#niu-yue-shi-bao",
@@ -5344,6 +5373,11 @@
         source:[ "/hk/finance/index.html",
           "/hk/finance/index_cn.html" ],
         target:"/oncc/zh-hans/finance" } ] },
+  "oo-software.com":{ _name:"O&O Software",
+    ".":[ { title:"Changelog",
+        docs:"https://docs.rsshub.app/program-update.html#oo-software-changelog",
+        source:[ "/en/changelog" ],
+        target:(params, url) => `/oo-software/changelog/${new URL(url).match(/\/en\/(.*?)\/changelog/)[1]}` } ] },
   "openwrt.org":{ _name:"Openwrt",
     ".":[ { title:"Model Releases",
         docs:"https://docs.rsshub.app/program-update.html#openwrt",

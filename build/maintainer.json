@@ -134,6 +134,9 @@
     "/acm-ecnu/contest/:category?": [
         "a180285"
     ],
+    "/acs/journal/:id": [
+        "nczitzk"
+    ],
     "/agirls/topic/:topic": [
         "TonyRL"
     ],
@@ -2002,7 +2005,15 @@
         "Lava-Swimmer",
         "noname1897"
     ],
-    "/nyaa/subekei/search/:query?": [
+    "/nyaa/sukebei/search/:query?": [
+        "Lava-Swimmer",
+        "noname1897"
+    ],
+    "/nyaa/user/:username?": [
+        "Lava-Swimmer",
+        "noname1897"
+    ],
+    "/nyaa/sukebei/user/:username?": [
         "Lava-Swimmer",
         "noname1897"
     ],
@@ -2039,6 +2050,9 @@
     ],
     "/oncc/:language/:channel?": [
         "Fatpandac"
+    ],
+    "/oo-software/changelog/:id": [
+        "nczitzk"
     ],
     "/openwrt/releases/:model?": [
         "DIYgod"
