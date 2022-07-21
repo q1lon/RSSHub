@@ -146,6 +146,12 @@ pageClass: routes
 
 <Route author="ttttmr" example="/clash/premium" path="/clash/premium" radar="1" />
 
+## CPUID
+
+### 新闻
+
+<Route author="TonyRL" example="/cpuid/news" path="/cpuid/news" radar="1" rssbud="1"/>
+
 ## cpython
 
 ### 正式版本发布
@@ -570,6 +576,10 @@ pageClass: routes
 ### 固件
 
 <Route author="Fatpandac" example="/asus/bios/RT-AX88U" path="/asus/bios/:model" :paramsDesc="['产品型号，可在产品页面找到']"/>
+
+### GPU Tweak
+
+<Route author="TonyRL" example="/asus/gpu-tweak" path="/asus/gpu-tweak" radar="1" rssbud="1"/>
 
 ## 蒲公英应用分发
 
