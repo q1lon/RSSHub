@@ -4,6 +4,12 @@ pageClass: routes
 
 # Application Updates
 
+## Android
+
+### SDK Platform Tools release notes
+
+<RouteEn author="nczitzk" example="/android/platform-tools-releases" path="/android/platform-tools-releases"/>
+
 ## Anki
 
 ### Changes
@@ -198,6 +204,12 @@ Language
 
 <RouteEn author="DIYgod" example="/firefox/addons/rsshub-radar" path="/firefox/addons/:id" :paramsDesc="['Add-ons id, can be found in add-ons url']"/>
 
+## FossHub
+
+### Software Update
+
+<RouteEn author="nczitzk" example="/fosshub/qBittorrent" path="/fosshub/:id" :paramsDesc="['Software id, can be found in URL']"/>
+
 ## Greasy Fork
 
 ### Script Update
@@ -209,6 +221,12 @@ Language
 ### Release News
 
 <RouteEn author="maokwen" example="/hugo/releases" path="/hugo/releases"/>
+
+## ImageMagick
+
+### Changelog
+
+<RouteEn author="nczitzk" example="/imagemagick/changelog" path="/imagemagick/changelog"/>
 
 ## IPSW.me
 

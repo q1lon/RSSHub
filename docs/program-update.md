@@ -14,6 +14,12 @@ pageClass: routes
 
 </Route>
 
+## Android
+
+### SDK Platform Tools release notes
+
+<Route author="nczitzk" example="/android/platform-tools-releases" path="/android/platform-tools-releases"/>
+
 ## Anki
 
 ### Changes
@@ -240,6 +246,12 @@ pageClass: routes
 
 <Route author="DIYgod" example="/firefox/addons/rsshub-radar" path="/firefox/addons/:id" :paramsDesc="['附加组件 id, 可在应用页 URL 中找到']" />
 
+## FossHub
+
+### Software Update
+
+<Route author="nczitzk" example="/fosshub/qBittorrent" path="/fosshub/:id" :paramsDesc="['软件 id，可在对应软件页 URL 中找到']"/>
+
 ## Greasy Fork
 
 ### 脚本更新
@@ -251,6 +263,12 @@ pageClass: routes
 ### 更新日志
 
 <Route author="maokwen" example="/hugo/releases" path="/hugo/releases"/>
+
+## ImageMagick
+
+### Changelog
+
+<Route author="nczitzk" example="/imagemagick/changelog" path="/imagemagick/changelog"/>
 
 ## IPSW\.me
 
