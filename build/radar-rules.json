@@ -1081,7 +1081,21 @@
         "source": [
           "/"
         ],
-        "target": "/bios/:model"
+        "target": "/asus/bios/:model"
+      }
+    ]
+  },
+  "asus.com": {
+    "_name": "ASUS",
+    ".": [
+      {
+        "title": "GPU Tweak",
+        "docs": "https://docs.rsshub.app/program-update.html#hua-shuo",
+        "source": [
+          "/campaign/GPU-Tweak-III/*",
+          "/"
+        ],
+        "target": "/asus/gpu-tweak"
       }
     ]
   },
@@ -2549,6 +2563,20 @@
         "title": "消费资讯",
         "docs": "https://docs.rsshub.app/government.html#tai-wan-xing-zheng-yuan-xiao-fei-zhe-bao-hu-hui",
         "source": "/Page/:type"
+      }
+    ]
+  },
+  "cpuid.com": {
+    "_name": "CPUID",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/program-update.html#cpuid",
+        "source": [
+          "/news.html",
+          "/"
+        ],
+        "target": "/cpuid/news"
       }
     ]
   },
@@ -10119,6 +10147,20 @@
           "/trending",
           "/"
         ]
+      }
+    ]
+  },
+  "chiark.greenend.org.uk": {
+    "_name": "PuTTY",
+    "www": [
+      {
+        "title": "Change Log",
+        "docs": "https://docs.rsshub.app/program-update.html#putty-change-log",
+        "source": [
+          "/~sgtatham/putty/changes.html",
+          "/"
+        ],
+        "target": "/putty/changes"
       }
     ]
   },

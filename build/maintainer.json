@@ -243,6 +243,9 @@
     "/asus/bios/:model": [
         "Fatpandac"
     ],
+    "/asus/gpu-tweak": [
+        "TonyRL"
+    ],
     "/atcoder/post/:language?/:keyword?": [
         "nczitzk"
     ],
@@ -2203,6 +2206,9 @@
         "nczitzk"
     ],
     "/pubmed/trending/:filters?": [
+        "nczitzk"
+    ],
+    "/putty/changes": [
         "nczitzk"
     ],
     "/qbittorrent/news": [
