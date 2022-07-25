@@ -336,6 +336,9 @@
     "/bookfere/:category": [
         "OdinZhang"
     ],
+    "/brave/latest": [
+        "nczitzk"
+    ],
     "/brooklynmuseum/exhibitions": [
         "chazeon"
     ],
@@ -462,6 +465,9 @@
     "/clash/premium": [
         "ttttmr"
     ],
+    "/cmde/:cate*": [
+        "run-ze"
+    ],
     "/cn-healthcare/index": [
         "qnloft"
     ],
@@ -570,6 +576,9 @@
         "Fatpandac"
     ],
     "/disinfo/publications": [
+        "nczitzk"
+    ],
+    "/diskanalyzer/whats-new": [
         "nczitzk"
     ],
     "/distill/": [
@@ -1859,6 +1868,9 @@
     "/ncwu/note": [
         "vuhe"
     ],
+    "/neatdownloadmanager/download/:os?": [
+        "nczitzk"
+    ],
     "/neea/jlpt": [
         "nczitzk"
     ],
@@ -1920,10 +1932,16 @@
     "/njnu/ceai/:type": [
         "Shujakuinkuraudo"
     ],
-    "/nju/jw/:type": [
+    "/nju/admission": [
         "ret-1"
     ],
     "/nju/gra": [
+        "ret-1"
+    ],
+    "/nju/jjc": [
+        "ret-1"
+    ],
+    "/nju/jw/:type": [
         "ret-1"
     ],
     "/nju/rczp/:type": [
@@ -1932,10 +1950,10 @@
     "/nju/scit/:type": [
         "ret-1"
     ],
-    "/nju/zcc": [
+    "/nju/zbb/:type": [
         "ret-1"
     ],
-    "/nju/zbb/:type": [
+    "/nju/zcc": [
         "ret-1"
     ],
     "/njupt/jwc/:type?": [
@@ -2096,6 +2114,12 @@
     ],
     "/panewslab/:category?": [
         "nczitzk"
+    ],
+    "/penguin-random-house/the-read-down": [
+        "StevenRCE0"
+    ],
+    "/penguin-random-house/articles": [
+        "StevenRCE0"
     ],
     "/people/cpc/24h": [
         "nczitzk"
@@ -2849,6 +2873,9 @@
         "nczitzk"
     ],
     "/watchout/": [
+        "nczitzk"
+    ],
+    "/wdc/download/:id": [
         "nczitzk"
     ],
     "/wechat/announce": [
