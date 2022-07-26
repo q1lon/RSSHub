@@ -2201,6 +2201,9 @@
     "/polkaworld/polkaworld/newest": [
         "iceqing"
     ],
+    "/postman/release-notes": [
+        "nczitzk"
+    ],
     "/prestige-av/series/:mid/:sort?": [
         "minimalistrojan"
     ],
@@ -2848,6 +2851,9 @@
     ],
     "/vlive/channel/:channel/board/:board": [
         "TonyRL"
+    ],
+    "/vmware/flings": [
+        "nczitzk"
     ],
     "/wallhaven/search/:filter?/:needDetails?": [
         "nczitzk",
