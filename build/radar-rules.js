@@ -281,6 +281,34 @@
         docs:"https://docs.rsshub.app/new-media.html#_52hrtt-hua-ren-tou-tiao",
         source:"/global/n/w/symposium/:id",
         target:"/52hrtt/symposium/:id" } ] },
+  "78dm.net":{ _name:"78动漫",
+    ".":[ { title:"新品速递",
+        docs:"https://docs.rsshub.app/anime.html#_78-dong-man-xin-pin-su-di",
+        source:[ "/news",
+          "/" ],
+        target:(params, url) =>
+                    `/78dm${new URL(url)
+                        .toString()
+                        .match(/78dm\.net(.*)$/)[1]
+                        .replace(/\.html$/, '')}` },
+      { title:"精彩评测",
+        docs:"https://docs.rsshub.app/anime.html#_78-dong-man-jing-cai-ping-ce",
+        source:[ "/eval_list",
+          "/" ],
+        target:(params, url) =>
+                    `/78dm${new URL(url)
+                        .toString()
+                        .match(/78dm\.net(.*)$/)[1]
+                        .replace(/\.html$/, '')}` },
+      { title:"新品速递",
+        docs:"https://docs.rsshub.app/anime.html#_78-dong-man-hao-tie-tui-jian",
+        source:[ "/ht_list",
+          "/" ],
+        target:(params, url) =>
+                    `/78dm${new URL(url)
+                        .toString()
+                        .match(/78dm\.net(.*)$/)[1]
+                        .replace(/\.html$/, '')}` } ] },
   "7mmtv.tv":{ _name:"7mmtv.tv",
     ".":[ { title:"分类",
         docs:"https://docs.rsshub.app/multimedia.html#7mmtv-fen-lei",
@@ -2825,6 +2853,21 @@
         source:[ "/?tab=new",
           "/" ],
         target:"/hackertalk" } ] },
+  "hafu.edu.cn":{ _name:"河南财政金融学院",
+    www:[ { title:"河南财政金融学院 - 通知公告",
+        docs:"https://docs.rsshub.app/university.html#he-nan-cai-zheng-jin-rong-xue-yuan",
+        source:"/*",
+        target:(params, url) => {
+                    if (url.indexOf('www')) {
+                        return '/hafu/news/ggtz';
+                    }
+                    if (url.indexOf('jwc')) {
+                        return '/hafu/news/jwc';
+                    }
+                    if (url.indexOf('zsjyc')) {
+                        return '/hafu/news/zsjyc';
+                    }
+                } } ] },
   "hakkatv.org.tw":{ _name:"客家電視台",
     ".":[ { title:"新聞首頁 - 客家電視台",
         docs:"https://docs.rsshub.app/traditional-media.html#ke-jia-dian-shi-tai",
@@ -5150,6 +5193,10 @@
         docs:"https://docs.rsshub.app/university.html#nan-jing-da-xue-ke-xue-ji-shu-chu",
         source:[ "/" ],
         target:"/nju/scit/:type" } ],
+    webplus:[ { title:"后勤集团",
+        docs:"https://docs.rsshub.app/university.html#nan-jing-da-xue-hou-qin-ji-tuan",
+        source:[ "/_s25/main.psp" ],
+        target:"/nju/hqjt" } ],
     zbb:[ { title:"招标办公室",
         docs:"https://docs.rsshub.app/university.html#nan-jing-da-xue-zhao-biao-ban-gong-shi",
         source:[ "/" ],

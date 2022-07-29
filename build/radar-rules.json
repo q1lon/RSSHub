@@ -361,6 +361,35 @@
       }
     ]
   },
+  "78dm.net": {
+    "_name": "78动漫",
+    ".": [
+      {
+        "title": "新品速递",
+        "docs": "https://docs.rsshub.app/anime.html#_78-dong-man-xin-pin-su-di",
+        "source": [
+          "/news",
+          "/"
+        ]
+      },
+      {
+        "title": "精彩评测",
+        "docs": "https://docs.rsshub.app/anime.html#_78-dong-man-jing-cai-ping-ce",
+        "source": [
+          "/eval_list",
+          "/"
+        ]
+      },
+      {
+        "title": "新品速递",
+        "docs": "https://docs.rsshub.app/anime.html#_78-dong-man-hao-tie-tui-jian",
+        "source": [
+          "/ht_list",
+          "/"
+        ]
+      }
+    ]
+  },
   "7mmtv.tv": {
     "_name": "7mmtv.tv",
     ".": [
@@ -5277,6 +5306,16 @@
       }
     ]
   },
+  "hafu.edu.cn": {
+    "_name": "河南财政金融学院",
+    "www": [
+      {
+        "title": "河南财政金融学院 - 通知公告",
+        "docs": "https://docs.rsshub.app/university.html#he-nan-cai-zheng-jin-rong-xue-yuan",
+        "source": "/*"
+      }
+    ]
+  },
   "hakkatv.org.tw": {
     "_name": "客家電視台",
     ".": [
@@ -9353,6 +9392,16 @@
           "/"
         ],
         "target": "/nju/scit/:type"
+      }
+    ],
+    "webplus": [
+      {
+        "title": "后勤集团",
+        "docs": "https://docs.rsshub.app/university.html#nan-jing-da-xue-hou-qin-ji-tuan",
+        "source": [
+          "/_s25/main.psp"
+        ],
+        "target": "/nju/hqjt"
       }
     ],
     "zbb": [
