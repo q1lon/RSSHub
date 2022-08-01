@@ -1312,6 +1312,12 @@
         "target": "/bilibili/user/video/:uid"
       },
       {
+        "title": "UP 主所有视频",
+        "docs": "https://docs.rsshub.app/social-media.html#bilibili",
+        "source": "/:uid",
+        "target": "/bilibili/user/video-all/:uid"
+      },
+      {
         "title": "UP 主专栏",
         "docs": "https://docs.rsshub.app/social-media.html#bilibili",
         "source": "/:uid",
@@ -6120,6 +6126,27 @@
       }
     ]
   },
+  "infoq.cn": {
+    "_name": "InfoQ 中文",
+    ".": [
+      {
+        "title": "推荐",
+        "docs": "https://docs.rsshub.app/new-media.html#infoq-zhong-wen",
+        "source": [
+          "/"
+        ],
+        "target": "/infoq/recommend"
+      },
+      {
+        "title": "话题",
+        "docs": "https://docs.rsshub.app/new-media.html#infoq-zhong-wen",
+        "source": [
+          "/topic/:id"
+        ],
+        "target": "/infoq/topic/:id"
+      }
+    ]
+  },
   "informs.org": {
     "_name": "INFORMS",
     "pubsonline": [
@@ -9081,6 +9108,29 @@
       }
     ]
   },
+  "neu.edu.cn": {
+    "_name": "东北大学",
+    "neunews": [
+      {
+        "title": "新闻网",
+        "docs": "https://docs.rsshub.app/university.html#dong-bei-da-xue",
+        "source": [
+          "/:type/list.htm"
+        ],
+        "target": "/neu/news/:type"
+      }
+    ],
+    "www.bmie": [
+      {
+        "title": "学院新闻 - 医学与生物信息工程学院",
+        "docs": "https://docs.rsshub.app/university.html#dong-bei-da-xue",
+        "source": [
+          "/"
+        ],
+        "target": "/neu/bmie/news"
+      }
+    ]
+  },
   "newmuseum.org": {
     "_name": "New Museum",
     "www": [
@@ -10403,6 +10453,13 @@
   },
   "qq.com": {
     "_name": "腾讯",
+    "egame": [
+      {
+        "title": "企鹅电竞直播间",
+        "docs": "https://docs.rsshub.app/live.html#qi-e-dian-jing-zhi-bo-jian-kai-bo",
+        "source": "/:id"
+      }
+    ],
     "mp.weixin": [
       {
         "title": "微信公众号栏目",
@@ -10415,11 +10472,15 @@
         "source": "/mp/appmsgalbum"
       }
     ],
-    "egame": [
+    "pvp": [
       {
-        "title": "企鹅电竞直播间",
-        "docs": "https://docs.rsshub.app/live.html#qi-e-dian-jing-zhi-bo-jian-kai-bo",
-        "source": "/:id"
+        "title": "王者荣耀 - 新闻中心",
+        "docs": "https://docs.rsshub.app/game.html#wang-zhe-rong-yao",
+        "source": [
+          "/web201706/*",
+          "/"
+        ],
+        "target": "/tencent/pvp/newsindex/all"
       }
     ],
     "v": [
@@ -13515,6 +13576,80 @@
           "/"
         ],
         "target": "/yaohuo"
+      }
+    ]
+  },
+  "yicai.com": {
+    "_name": "第一财经",
+    ".": [
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/traditional-media.html#di-yi-cai-jing-zui-xin",
+        "source": [
+          "/"
+        ],
+        "target": "/yicai/latest"
+      },
+      {
+        "title": "头条",
+        "docs": "https://docs.rsshub.app/traditional-media.html#di-yi-cai-jing-tou-tiao",
+        "source": [
+          "/"
+        ],
+        "target": "/yicai/headline"
+      },
+      {
+        "title": "VIP 频道",
+        "docs": "https://docs.rsshub.app/traditional-media.html#di-yi-cai-jing-vip-pin-dao",
+        "source": [
+          "/vip/product/:id",
+          "/"
+        ],
+        "target": "/yicai/vip/:id"
+      },
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/traditional-media.html#di-yi-cai-jing-xin-wen",
+        "source": [
+          "/news/:id",
+          "/news"
+        ],
+        "target": "/yicai/news/:id"
+      },
+      {
+        "title": "关注",
+        "docs": "https://docs.rsshub.app/traditional-media.html#di-yi-cai-jing-guan-zhu",
+        "source": [
+          "/feed/:id",
+          "/feed"
+        ],
+        "target": "/yicai/feed/:id"
+      },
+      {
+        "title": "视听",
+        "docs": "https://docs.rsshub.app/traditional-media.html#di-yi-cai-jing-shi-ting",
+        "source": [
+          "/video/:id",
+          "/video"
+        ],
+        "target": "/yicai/video/:id"
+      },
+      {
+        "title": "正在",
+        "docs": "https://docs.rsshub.app/traditional-media.html#di-yi-cai-jing-zheng-zai",
+        "source": [
+          "/brief"
+        ],
+        "target": "/yicai/brief"
+      },
+      {
+        "title": "一财号",
+        "docs": "https://docs.rsshub.app/traditional-media.html#di-yi-cai-jing-yi-cai-hao",
+        "source": [
+          "/author/:id",
+          "/author"
+        ],
+        "target": "/yicai/author/:id"
       }
     ]
   },
