@@ -2352,7 +2352,7 @@
     "/pianyuan/indexers/pianyuan/results/search/api": [
         "jerry1119"
     ],
-    "/picuki/profile/:id/:displayVideo?": [
+    "/picuki/profile/:id/:functionalFlag?": [
         "hoilc",
         "Rongronggg9"
     ],
@@ -2427,6 +2427,9 @@
         "nczitzk"
     ],
     "/pts/dailynews": [
+        "nczitzk"
+    ],
+    "/pts/live/:id?": [
         "nczitzk"
     ],
     "/pts/opinion": [
@@ -2607,6 +2610,9 @@
     ],
     "/secnews/index": [
         "kaiili"
+    ],
+    "/seekingalpha/:symbol/:category?": [
+        "TonyRL"
     ],
     "/segmentfault/channel/:name": [
         "LogicJake",

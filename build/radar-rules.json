@@ -10428,6 +10428,15 @@
         "target": "/pts/curations"
       },
       {
+        "title": "整理報導",
+        "docs": "https://docs.rsshub.app/traditional-media.html#gong-shi-xin-wen-wang-zheng-li-bao-dao",
+        "source": [
+          "/live/:id",
+          "/"
+        ],
+        "target": "/pts/live/:id"
+      },
+      {
         "title": "觀點",
         "docs": "https://docs.rsshub.app/traditional-media.html#gong-shi-xin-wen-wang-guan-dian",
         "source": [
@@ -11142,6 +11151,20 @@
           "/*path",
           "/"
         ]
+      }
+    ]
+  },
+  "seekingalpha.com": {
+    "_name": "Seeking Alpha",
+    ".": [
+      {
+        "title": "Summary",
+        "docs": "https://docs.rsshub.app/en/finance.html#seeking-alpha",
+        "source": [
+          "/symbol/:symbol/:category",
+          "/symbol/:symbol/earnings/:category"
+        ],
+        "target": "/seekingalpha/:symbol/:category"
       }
     ]
   },
