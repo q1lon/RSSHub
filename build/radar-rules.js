@@ -907,7 +907,14 @@
       { title:"用户追番列表",
         docs:"https://docs.rsshub.app/social-media.html#bilibili",
         source:"/:uid",
-        target:"/bilibili/user/bangumi/:uid" } ],
+        target:"/bilibili/user/bangumi/:uid" },
+      { title:"当前合集",
+        docs:"https://docs.rsshub.app/social-media.html#bilibili",
+        source:"/:uid/channel/collectiondetail",
+        target:(params, url) => {
+                    const sid = new URL(url).searchParams.get('sid');
+                    return `/bilibili/collection/:uid/${sid}`;
+                } } ],
     manga:[ { title:"漫画更新",
         docs:"https://docs.rsshub.app/social-media.html#bilibili-man-hua-geng-xin",
         source:"/detail/:comicid",
@@ -4782,6 +4789,11 @@
         docs:"https://docs.rsshub.app/design.html#logonews-biao-zhi-qing-bao-ju-zuo-pin-biao-qian",
         source:[ "/work/tags/:tag" ],
         target:"/logonews/work/tags/:tag" } ] },
+  "lovelive-anime.jp":{ _name:"Love Live 官网",
+    www:[ { title:"最新NEWS",
+        docs:"https://docs.rsshub.app/anime.html#lovelive-anime",
+        source:[ "/" ],
+        target:"/lovelive-anime/news" } ] },
   "lvv2.com":{ _name:"LVV2",
     ".":[ { title:"热门",
         docs:"https://docs.rsshub.app/new-media.html#lvv2",
