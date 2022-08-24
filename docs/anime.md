@@ -327,6 +327,18 @@ pageClass: routes
 
 </Route>
 
+### 用户订阅列表
+
+<Route author="FeCCC" example="/iwara/subscriptions" path="/iwara/subscriptions" radar="1" rssbud="1" selfhost="1">
+
+::: warning 注意
+
+用户动态需要 iwara 登录后的 Cookie 值，所以只能自建，详情见[部署页面](/install/#route-specific-configurations)的配置模块。
+
+:::
+
+</Route>
+
 ## Kemono
 
 ### Posts
@@ -640,3 +652,9 @@ Sources
 ### 最新汉化
 
 <Route author="junfengP" example="/zdfx" path="/zdfx"/>
+
+## アニメ新番組
+
+### 當季新番
+
+<Route author="devinmugen" example="/bangumi/online" path="/bangumi/online"/>
