@@ -869,9 +869,9 @@ IT・科学 tech_science
 
 无料全文，综合页 (新着・速報) 文章标题补充板块标签。
 
-| 新着・速報   | 　　社会     | 政治       | 経済      | スポーツ   | 国際    | 科学・ＩＴ   | 選挙・世論調査  | エンタメ・文化 | 囲碁・将棋     | ライフ  | 地域    | 社説        | 皇室        |
-| ------- | -------- | -------- | ------- | ------ | ----- | ------- | -------- | ------- | --------- | ---- | ----- | --------- | --------- |
-| 　news 　 | national | politics | economy | sports | world | science | election | culture | igoshougi | life | local | editorial | koushitsu |
+| 新着・速報 | 社会       | 政治       | 経済      | スポーツ   | 国際    | 科学・ＩＴ   | 選挙・世論調査  | エンタメ・文化 | 囲碁・将棋     | ライフ  | 地域    | 社説        | 皇室        |
+| ----- | -------- | -------- | ------- | ------ | ----- | ------- | -------- | ------- | --------- | ---- | ----- | --------- | --------- |
+| news  | national | politics | economy | sports | world | science | election | culture | igoshougi | life | local | editorial | koushitsu |
 
 </Route>
 
@@ -1152,6 +1152,18 @@ Type 栏目：
 
 </Route>
 
+## 華視
+
+### 新聞
+
+<Route author="miles170" example="/cts/real" path="/cts/:category" :paramsDesc="['类别']" radar="1">
+
+| 即時   | 氣象      | 政治       | 國際            | 社會      | 運動     | 生活   | 財經    | 台語        | 地方    | 產業 | 綜合      | 藝文   | 娛樂        |
+| ---- | ------- | -------- | ------------- | ------- | ------ | ---- | ----- | --------- | ----- | -- | ------- | ---- | --------- |
+| real | weather | politics | international | society | sports | life | money | taiwanese | local | pr | general | arts | entertain |
+
+</Route>
+
 ## 环球网
 
 ### 分类
@@ -1364,6 +1376,18 @@ category 对应的关键词有
 
 <Route author="shunf4" example="/zaobao/interactive-graphics" path="/zaobao/interactive-graphics" />
 
+## 聯合新聞網
+
+### 即時新聞
+
+<Route author="miles170" example="/udn/news/breakingnews/99" path="/udn/news/breakingnews/:id" :paramsDesc="['类别']" radar="1">
+
+| 0  | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  | 9  | 11 | 12 | 13 | 99  |
+| -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- | --- |
+| 精選 | 要聞 | 社會 | 地方 | 兩岸 | 國際 | 財經 | 運動 | 娛樂 | 生活 | 股市 | 文教 | 數位 | 不分類 |
+
+</Route>
+
 ## 路透社
 
 ::: warning 迁移说明
@@ -1413,6 +1437,18 @@ category 对应的关键词有
 ### 深度调查栏目
 
 <Route author="LyleLee" example="/reuters/investigates" path="/reuters/investigates" />
+
+## 蒙古之声
+
+### 新闻
+
+<Route author="zphw" example="/vom/featured" path="/vom/featured/:lang?" :paramsDesc="['语言，见下表，默认 `mn`']">
+
+| English | 日本語 | Монгол | Русский | 简体中文 |
+| ------- | --- | ------ | ------- | ---- |
+| en      | ja  | mn     | ru      | zh   |
+
+</Route>
 
 ## 明报
 
@@ -1723,6 +1759,18 @@ category 对应的关键词有
 
 </Route>
 
+## 厦门网
+
+### 数字媒体
+
+<Route author="nczitzk" example="/xmnn/epaper/xmrb" path="/xmnn/epaper/:id?" :paramsDesc="['报纸 id，见下表，默认为 `xmrb`，即厦门日报']">
+
+| 厦门日报 | 厦门晚报 | 海西晨报 | 城市捷报 |
+| ---- | ---- | ---- | ---- |
+| xmrb | xmwb | hxcb | csjb |
+
+</Route>
+
 ## 台湾中央通讯社
 
 ### 分类
@@ -1960,6 +2008,12 @@ category 对应的关键词有
 | 全部新闻  | 港股直击  | 香港财经     | 中国财经  | 国际财经          | 地产新闻     | 时事脉搏    |
 
 </Route>
+
+## 星島日報
+
+### 即時
+
+<Route author="TonyRL" example="/stheadline/std/realtime/即時" path="/stheadline/std/realtime/:category*" :paramsDesc="['分類路徑，URL 中 `/realtime/` 後的部分，預設為`即時`']" radar ="1" rssbud="1"/>
 
 ## 星洲网
 

@@ -2310,6 +2310,10 @@ others = 热点新闻 + 滚动新闻
 
 <Route author="AlexdanerZe" example="/huxiu/collection/212" path="/huxiu/collection/:id" :paramsDesc="['文集 id']" />
 
+### 简报
+
+<Route author="Fatpandac" example="/huxiu/briefcolumn/1" path="/huxiu/briefcolumn/:id" :paramsDesc="['简报 id']" />
+
 ## 互动吧
 
 ### 活动
@@ -2474,11 +2478,23 @@ column 为 third 时可选的 category:
 
 <Route author="WenryXu" example="/juesheng" path="/juesheng"/>
 
-## 看点快报
+## 卡卡洛普
 
-### 首页
+### 宅宅新聞 - 分類
 
-<Route author="nczitzk" example="/kuaibao" path="/kuaibao/index"/>
+<Route author="TonyRL" example="/gamme/news" path="/gamme/news/:category?" :paramsDesc="['分類名，可在 URL 找到，預設為 `all`']" radar="1" rssbud="1"/>
+
+### 宅宅新聞 - 標籤
+
+<Route author="TonyRL" example="/gamme/news/tag/歐派" path="/gamme/news/tag/:tag" :paramsDesc="['標籤，可在 URL 找到']" radar="1" rssbud="1"/>
+
+### 西斯新聞 - 分類
+
+<Route author="TonyRL" example="/gamme/sexynews" path="/gamme/sexynews/:category?" :paramsDesc="['分類名，可在 URL 找到，預設為 `all`']" radar="1" rssbud="1"/>
+
+### 西斯新聞 - 標籤
+
+<Route author="TonyRL" example="/gamme/sexynews/tag/歐派" path="/gamme/sexynews/tag/:tag" :paramsDesc="['標籤，可在 URL 找到']" radar="1" rssbud="1"/>
 
 ## 科技島讀
 
@@ -4085,6 +4101,18 @@ wechat-feeds 来源[已停止更新](https://github.com/hellodword/wechat-feeds/
 | 默认      | 最热  | 最新  |
 | ------- | --- | --- |
 | default | hot | new |
+
+</Route>
+
+## 壹蘋新聞網
+
+### 最新新聞
+
+<Route author="miles170" example="/nextapple/realtime/new" path="/nextapple/realtime/:category?" :paramsDesc="['類別，見下表，默認為最新']">
+
+| 最新  | 娛樂            | 生活   | 社會    | 政治       | 國際            | 財經      | 飲食旅遊      | 房市       | 時尚      | 車市   | 健康     | 體育     | 3C     |
+| --- | ------------- | ---- | ----- | -------- | ------------- | ------- | --------- | -------- | ------- | ---- | ------ | ------ | ------ |
+| new | entertainment | life | local | politics | international | finance | lifestyle | property | fashion | auto | health | sports | gadget |
 
 </Route>
 
