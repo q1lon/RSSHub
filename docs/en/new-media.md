@@ -166,23 +166,7 @@ Category of news
 
 ### Blog
 
-<RouteEn author="nczitzk" example="/deepmind/blog" path="/deepmind/blog/:category?" :paramsDesc="['Category, see below']">
-
-| All | Podcasts | Research | News |
-| --- | -------- | -------- | ---- |
-|     | Podcasts | Research | News |
-
-</RouteEn>
-
-## Deutsche Welle
-
-<RouteEn author="nczitzk" example="/dw/en" path="/dw/:lang?/:caty?" :paramsDesc="['Language, can be found in the URL of the corresponding language version page, German by default', 'Category, all by default']">
-
-| All  | German Press | Culture | Economy | Science & Nature |
-| ---- | -------- | -------- | -------- | -------- |
-| all  | press    | cul      | eco      | sci      |
-
-</RouteEn>
+<RouteEn author="nczitzk" example="/deepmind/blog" path="/deepmind/blog" radar="1" rssbud="1"/>
 
 ## Engadget
 
@@ -398,6 +382,12 @@ Provides a better reading experience (full text articles) over the official one.
 
 </RouteEn>
 
+## Indians in Kuwait
+
+### News
+
+<RouteEn author="TonyRL" example="/indiansinkuwait/latest" path="/indiansinkuwait/latest" radar="1" rssbud="1"/>
+
 ## Institute of International Education
 
 ### Blog
@@ -443,6 +433,16 @@ Provides a better reading experience (full text articles) over the official one.
 | k      | a    | c      | e       | f        | g       | i                | j      | r       | s       | v          |
 
 </RouteEn>
+
+## Kuwait Local
+
+### Latest News
+
+<RouteEn author="TonyRL" example="/kuwaitlocal" path="/kuwaitlocal" radar="1" rssbud="1"/>
+
+### Categorised News
+
+<RouteEn author="TonyRL" example="/kuwaitlocal/article" path="/kuwaitlocal/:category?" :paramsDesc="['Category name, can be found in URL, `latest` by default']" radar="1" rssbud="1"/>
 
 ## Letterboxd
 

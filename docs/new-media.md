@@ -282,23 +282,7 @@ pageClass: routes
 
 ### Blog
 
-<Route author="nczitzk" example="/deepmind/blog" path="/deepmind/blog/:category?" :paramsDesc="['分类，见下表']">
-
-| All | Podcasts | Research | News |
-| --- | -------- | -------- | ---- |
-|     | Podcasts | Research | News |
-
-</Route>
-
-## Deutsche Welle 德国之声
-
-<Route author="nczitzk" example="/dw/zh" path="/dw/:lang?/:caty?" :paramsDesc="['语言，可在对应语言版本页的 URL 中找到，默认为德语', '分类，见下表，默认为全部']">
-
-| 全部  | 德语媒体  | 文化经纬 | 经济纵横 | 科技环境 |
-| --- | ----- | ---- | ---- | ---- |
-| all | press | cul  | eco  | sci  |
-
-</Route>
+<Route author="nczitzk" example="/deepmind/blog" path="/deepmind/blog" radar="1" rssbud="1"/>
 
 ## DoNews
 
@@ -311,6 +295,12 @@ pageClass: routes
 | (空) | company | business | ent | digital | idonews |
 
 </Route>
+
+## e 公司
+
+### 快讯
+
+<Route author="hillerliao" example="/egsea/flash" path="/egsea/flash" />
 
 ## Engadget 瘾科技
 
@@ -704,6 +694,18 @@ Tag
 ### 并购事件
 
 <Route author="xyqfer" example="/itjuzi/merge" path="/itjuzi/merge"/>
+
+## iThome 台灣
+
+### Feeds
+
+<Route author="miles170" example="/ithome/tw/feeds/news" path="/ithome/tw/feeds/:category" :paramsDesc="['類別']" radar="1">
+
+| 新聞   | AI       | Cloud | DevOps | 資安       |
+| ---- | -------- | ----- | ------ | -------- |
+| news | big-data | cloud | devops | security |
+
+</Route>
 
 ## KBS
 
@@ -1411,6 +1413,22 @@ Supported sub-sites:
 
 </Route>
 
+## Web3Caff
+
+### 发现
+
+<Route author="nczitzk" example="/web3caff" path="/web3caff/:path?" :paramsDesc="['路径，默认为首页']">
+
+::: tip 提示
+
+路径处填写对应页面 URL 中 `https://web3caff.com/` 后的字段。下面是一个例子。
+
+若订阅 [叙事 - Web3Caff](https://web3caff.com/zh/archives/category/news_zh) 则将对应页面 URL <https://web3caff.com/zh/archives/category/news_zh> 中 `https://web3caff.com/` 后的字段 `zh/archives/category/news_zh` 作为路径填入。此时路由为 [`/web3caff/zh/archives/category/news_zh`](https://rsshub.app/web3caff/zh/archives/category/news_zh)
+
+:::
+
+</Route>
+
 ## World Happiness
 
 ### Blog
@@ -2003,6 +2021,50 @@ area 分区选项
 ### 球员新闻
 
 <Route author="HenryQW" example="/dongqiudi/player_news/50000339" path="/dongqiudi/player_news/:id" :paramsDesc="['球员 id, 可在[懂球帝数据](https://www.dongqiudi.com/data)中通过其队伍找到']"/>
+
+## 端传媒
+
+通过提取文章全文，以提供比官方源更佳的阅读体验。
+
+::: warning 注意
+
+付费内容全文可能需要登陆获取，详情见部署页面的配置模块。
+
+:::
+
+### 专题・栏目
+
+<Route author="prnake" example="/theinitium/channel/latest/zh-hans" path="/theinitium/channel/:type?/:language?" :paramsDesc="['栏目，缺省为最新', '语言，简体`zh-hans`，繁体`zh-hant`，缺省为简体']"/>
+
+Type 栏目：
+
+| 最新     | 深度      | What’s New | 广场                | 科技         | 风物      | 特约      | ... |
+| ------ | ------- | ---------- | ----------------- | ---------- | ------- | ------- | --- |
+| latest | feature | news-brief | notes-and-letters | technology | culture | pick_up | ... |
+
+更多栏目名称可通过 <https://theinitium.com/section/special/> 及 <https://theinitium.com/section/hot_channel/> 获取。
+
+</Route>
+
+### 话题・标签
+
+<Route author="AgFlore" example="/theinitium/tags/2019_10/zh-hans" path="/theinitium/tags/:type/:language?" :paramsDesc="['话题 ID，可从话题页 URL 中获取，如 <https://theinitium.com/tags/2019_10/>', '语言，简体`zh-hans`，繁体`zh-hant`，缺省为简体']"/>
+
+### 作者
+
+<Route author="AgFlore" example="/theinitium/author/ninghuilulu/zh-hans" path="/theinitium/author/:type/:language?" :paramsDesc="['作者 ID，可从作者主页 URL 中获取，如<https://theinitium.com/author/ninghuilulu/>','语言，简体`zh-hans`，繁体`zh-hant`，缺省为简体']"/>
+
+### 个人订阅追踪动态
+
+<Route author="AgFlore" example="/theinitium/follow/articles/zh-hans" path="/theinitium/follow/articles/:language?" :paramsDesc="['语言，简体`zh-hans`，繁体`zh-hant`，缺省为简体']">
+
+::: warning 注意
+
+需要自建，详情见部署页面的配置模块。
+
+:::
+
+</Route>
 
 ## 多知网
 
@@ -3325,18 +3387,13 @@ column 为 third 时可选的 category:
 
 ## 深潮 TechFlow
 
-### 分类
+### 首页
 
-<Route author="nczitzk" example="/techflow520" path="/techflow520/:category?" :paramsDesc="['分类，见下表，默认为头条']">
-
-| 头条 | 元宇宙 | 项目 | DeFi | 矿业 | 隐私计算 | 碳中和 | 活动 | NFT | 产业 |
-| -- | --- | -- | ---- | -- | ---- | --- | -- | --- | -- |
-
-</Route>
+<Route author="nczitzk" example="/techflowpost" path="/techflowpost" />
 
 ### 快讯
 
-<Route author="nczitzk" example="/techflow520/newsflash" path="/techflow520/newsflash"/>
+<Route author="nczitzk" example="/techflowpost/express" path="/techflowpost/express" />
 
 ## 深焦
 
@@ -3430,15 +3487,21 @@ column 为 third 时可选的 category:
 
 </Route>
 
+## 世界新聞網
+
+### 新聞
+
+<Route author="TonyRL" example="/worldjournal" path="/worldjournal/:path*" :paramsDesc="['URL 中 `/wj/` 後的路徑，預設為 `cate/breaking`']" radar="1" rssbud="1" />
+
 ## 数英网
 
 ### 数英网最新文章
 
-<Route author="occupy5" example="/digitaling/index" path="/digitaling/index" :paramsDesc="['首页最新文章, 数英网']" />
+<Route author="occupy5" example="/digitaling/index" path="/digitaling/index" :paramsDesc="['首页最新文章，数英网']" />
 
 ### 数英网文章专题
 
-<Route author="occupy5" example="/digitaling/articles/latest" path="/digitaling/articles/:category/:subcate?" :paramsDesc="['文章专题分类 ','hot分类下的子类']" />
+<Route author="occupy5" example="/digitaling/articles/latest" path="/digitaling/articles/:category/:subcate?" :paramsDesc="['文章专题分类','hot 分类下的子类']" />
 
 | 最新文章   | 头条       | 热文  | 精选     |
 | ------ | -------- | --- | ------ |
