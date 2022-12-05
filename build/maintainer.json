@@ -149,9 +149,6 @@
     "/acfun/user/video/:uid": [
         "wdssmq"
     ],
-    "/acm-ecnu/contest/:category?": [
-        "a180285"
-    ],
     "/acs/journal/:id": [
         "nczitzk"
     ],
@@ -1164,6 +1161,12 @@
     ],
     "/eastday/sh": [
         "saury"
+    ],
+    "/ecnu/acm/contest/:category?": [
+        "a180285"
+    ],
+    "/ecnu/yjs": [
+        "shengmaosu"
     ],
     "/economist/download": [
         "nczitzk"
@@ -4012,6 +4015,9 @@
         "SettingDust",
         "Halcao"
     ],
+    "/usepanda/feeds/:id": [
+        "lyrl"
+    ],
     "/ustb/yjsy/news/adma": [
         "DA1Y1"
     ],
@@ -5455,7 +5461,6 @@
     "/zkyai": [],
     "/zkyyjs": [],
     "/outele": [],
-    "/ecnuyjs": [],
     "/kaoyan": [],
     "/hustyjs": [],
     "/ccnuyjs": [],
