@@ -1510,7 +1510,8 @@
     ],
     "/gov/customs/list/:gchannel?": [
         "Jeason0228",
-        "TonyRL"
+        "TonyRL",
+        "he1q"
     ],
     "/gov/fmprc/:category?": [
         "nicolaszf",
@@ -4105,6 +4106,9 @@
     ],
     "/usts/juch/:type?": [
         "Fatpandac"
+    ],
+    "/uw/gix/news/:category": [
+        "dykderrick"
     ],
     "/verfghbw/press/:keyword?": [
         "quinn-dev"
