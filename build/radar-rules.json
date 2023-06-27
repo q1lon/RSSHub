@@ -5312,6 +5312,19 @@
       }
     ]
   },
+  "curiouscat.live": {
+    "_name": "CuriousCat",
+    ".": [
+      {
+        "title": "User",
+        "docs": "https://docs.rsshub.app/en/social-media.html#curiouscat",
+        "source": [
+          "/:id"
+        ],
+        "target": "/curiouscat/user/:id"
+      }
+    ]
+  },
   "curius.app": {
     "_name": "Curius",
     ".": [
@@ -21135,6 +21148,20 @@
         "docs": "https://docs.rsshub.app/traditional-media.html#tai-wan-ying-wen-xin-wen",
         "source": "/:lang/index",
         "target": "/taiwannews/hot/:lang"
+      }
+    ]
+  },
+  "tangshufang.com": {
+    "_name": "唐书房",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/new-media.html#tang-shu-fang-fen-lei",
+        "source": [
+          "/:category",
+          "/"
+        ],
+        "target": "/tangshufang/:category?"
       }
     ]
   },
