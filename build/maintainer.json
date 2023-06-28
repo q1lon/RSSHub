@@ -941,6 +941,9 @@
     "/cas/iee/kydt": [
         "nczitzk"
     ],
+    "/cas/is/:path+": [
+        "Misaka13514"
+    ],
     "/cas/mesalab/kb": [
         "renzhexigua"
     ],
@@ -1974,6 +1977,9 @@
     "/gcores/category/:category": [
         "MoguCloud",
         "StevenRCE0"
+    ],
+    "/gcores/collections/:collection": [
+        "kudryavka1013"
     ],
     "/gcores/radios/:category?": [
         "eternasuno"
