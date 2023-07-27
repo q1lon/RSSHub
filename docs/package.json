@@ -23,7 +23,13 @@
     "@vuepress/plugin-pwa": "1.9.9",
     "@vuepress/shared-utils": "1.9.9",
     "markdown-it": "13.0.1",
+<<<<<<< HEAD
     "pinyin-pro": "3.15.4",
+||||||| parent of 4756f75b1 (chore(deps): bump pinyin-pro from 3.16.0 to 3.16.1 in /docs (#1292))
+    "pinyin-pro": "3.16.0",
+=======
+    "pinyin-pro": "3.16.1",
+>>>>>>> 4756f75b1 (chore(deps): bump pinyin-pro from 3.16.0 to 3.16.1 in /docs (#1292))
     "remark": "13.0.0",
     "remark-frontmatter": "3.0.0",
     "remark-gfm": "1.0.0",
