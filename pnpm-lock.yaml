@@ -205,8 +205,8 @@ importers:
         specifier: 9.3.1
         version: 9.3.1
       rate-limiter-flexible:
-        specifier: 8.2.0
-        version: 8.2.0
+        specifier: 9.1.1
+        version: 9.1.1
       re2js:
         specifier: 1.2.1
         version: 1.2.1
@@ -503,8 +503,8 @@ packages:
     resolution: {integrity: sha512-lOoVRwADj8hjf7al89tvQ2a1lf53Z+7tiXMgpZJL3maQPDxh0DgLMN62B2MKUOFcoodBHLMbDM6WAbKgNy5Suw==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/generator@7.29.0':
-    resolution: {integrity: sha512-vSH118/wwM/pLR38g/Sgk05sNtro6TlTJKuiMXDaZqPUfjTFcudpCOt00IhOfj+1BFAX+UFAlzCU+6WXr3GLFQ==}
+  '@babel/generator@7.29.1':
+    resolution: {integrity: sha512-qsaF+9Qcm2Qv8SRIMMscAvG4O3lJ0F1GuMo5HR/Bp02LopNgnZBC/EkbevHFeGs4ls/oPz9v+Bsmzbkbe+0dUw==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-annotate-as-pure@7.27.3':
@@ -5130,8 +5130,8 @@ packages:
     resolution: {integrity: sha512-AAFUA5O1d83pIHEhJwWCq/RQcRukCkn/NSm2QsTEMle5f2hP0ChI2+3Xb051PZCkLryI/Ir1MVKviT2FIloaTQ==}
     engines: {node: '>=12'}
 
-  rate-limiter-flexible@8.2.0:
-    resolution: {integrity: sha512-lzpvMBP6GpCJftWP90RHzhCAAPFnO3BKaE6STNc6tPsu/uF6Y7kZDczV45a4Ms/H+5G2qqPFp8kg0l8gxCxcsw==}
+  rate-limiter-flexible@9.1.1:
+    resolution: {integrity: sha512-imxFjzPCmvDLMe7d2tsgiSQvs5EI2fI9SNymmslAfOqznZhsZ+PqbIjIYKpuSbd3pKovR1aMG47qfCLIO/adVg==}
 
   re2js@1.2.1:
     resolution: {integrity: sha512-pMQCWm/GsGambkqCl0l02SZUUd5yQ4u8D72K90TJWHMALuYg8BWCdcfXdXIvEQYGEM8K9QrxYAFtVgeQ+LZKFw==}
@@ -6281,7 +6281,7 @@ snapshots:
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@babel/code-frame': 7.29.0
-      '@babel/generator': 7.29.0
+      '@babel/generator': 7.29.1
       '@babel/helper-compilation-targets': 7.28.6
       '@babel/helper-module-transforms': 7.28.6(@babel/core@7.28.3)
       '@babel/helpers': 7.28.6
@@ -6313,7 +6313,7 @@ snapshots:
       '@jridgewell/trace-mapping': 0.3.31
       jsesc: 3.1.0
 
-  '@babel/generator@7.29.0':
+  '@babel/generator@7.29.1':
     dependencies:
       '@babel/parser': 7.29.0
       '@babel/types': 7.29.0
@@ -7055,7 +7055,7 @@ snapshots:
   '@babel/traverse@7.29.0':
     dependencies:
       '@babel/code-frame': 7.29.0
-      '@babel/generator': 7.29.0
+      '@babel/generator': 7.29.1
       '@babel/helper-globals': 7.28.0
       '@babel/parser': 7.29.0
       '@babel/template': 7.28.6
@@ -11436,7 +11436,7 @@ snapshots:
 
   quick-lru@6.1.2: {}
 
-  rate-limiter-flexible@8.2.0: {}
+  rate-limiter-flexible@9.1.1: {}
 
   re2js@1.2.1: {}
 
